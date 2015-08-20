@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>All Tax Zones</h1>
+
+  <p>This screen displays all Tax Zones.</p>
+
+  <p>Tax Zones are simply geographical physical address areas that your organization must
+  collect tax from, for all or some of your Products.</p>
+
+  <p>Taxes are based on either the location of the Shipping Addresses of each Recipient,
+  or the Billing Address of each Customer during the checkout process.<br />
+  <br />
+  Taxes are calculated as a percentage of the Order Subtotal. Any shipping fees are
+  excluded from tax calculations.<br />
+  <br />
+  TIP: If some of your Customers are Tax-Exempt, you can prompt them during the checkout
+  process and the Tax will not be calculated,&nbsp;displayed, or collected for that
+  Order. &nbsp;Your Site Manager can enable this feature in the Site Settings.<br />
+  <br />
+  TIP: If none of your Customers are taxable, or none of your Products are taxable, then
+  you can completely disable tax from all Commerce Pages and Orders. Your Site Manager
+  can enable this feature in the Site Settings.<br />
+  <br />
+  IMPORTANT:&nbsp;Tax Zones must not overlay each other.</p>
+
+  <h2>Creating Tax Zones</h2>
+
+  <p>To create a Tax Zone, click "Create Tax Zone".</p>
+
+  <h2>How Tax is Calculated</h2>
+
+  <p>Both the Billing and/or the Shipping Addresses are considered in the calculation of
+  tax for each Order. Only "taxable" Products will be included in any tax
+  calculations.<br />
+  <br />
+  For each taxable Product in the Cart,&nbsp;taxes will be accumulated as follows:</p>
+
+  <ul>
+    <li>For Products that are "shippable", the sum of all taxable Products for
+    <span style="font-style: italic;">each</span> recipient in the Cart is
+    computed:<br />
+    Destination Tax = ((Product Price - Product Discount) * Product Quantity) * Tax
+    Percentage from the Tax Zone of the Shipping Address.<br /></li>
+
+    <li>For Products that are NOT "shippable",&nbsp;the sum of all taxable Products in
+    the Cart is computed:<br />
+    Purchaser Tax = ((Product Price - Product Discount) * Product Quantity) * Tax
+    Percentage from the Tax Zone of the Billing Address</li>
+  </ul>
+
+  <p>Therefore, the total Order Tax = Destination Tax + Purchaser Tax</p>
+</body>
+</html>

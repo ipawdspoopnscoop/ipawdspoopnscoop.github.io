@@ -1,0 +1,23 @@
+body
+{
+    font-size: 60%;
+}
+
+#header,
+#subnav,
+#help_link,
+h1,
+.subheading,
+.print_packing_slip,
+.buttons,
+#footer
+{
+    display: none;
+}
+
+#content
+{
+    border: none;
+    font-size: 100%;
+    padding: 0;
+}

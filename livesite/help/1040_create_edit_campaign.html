@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Create / Edit Campaign</h1>
+
+  <p>This screen allows you to create a new Manual Campaign or update the status of any
+  Campaign. Options will be visible and/or editable based on whether this is a Manual or Auto Campaign.</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Status</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Status:</td>
+
+        <td>Once your Campaign is created, you will see a Status field. &nbsp;You can
+        edit the status of your Campaign as long as it's not Complete. The Status is
+        affected by whether or not the Campaign Scheduler is enabled.<br />
+        <br />
+        <span style="font-weight: bold;">Ready to Send</span> means that the Campaign is
+        either in the process of being sent, waiting for the Scheduled Time and Date. You
+        can start the Campaign at any time by pressing "Send Campaign".<br />
+        <br />
+        <span style="font-weight: bold;">Paused</span> means that the Campaign has been
+        interrupted by a Campaign Manager. You can restart a paused Campaign at any time
+        and the system will pick up where it left off by changing the status to "Ready to
+        Send". Scheduled Campaigns restart immediately if they are past due, or set to
+        send immediately. If the Campaign Scheduler is not enabled, click on Send
+        Campaign" to restart the Campaign immediately.<br />
+        <br />
+        <span style="font-weight: bold;">Cancelled</span>&nbsp;means that the Campaign
+        has been stopped by a Campaign Manager. You cannot restart a Campaign that has
+        been cancelled. If the Campaign has already started sending e-mails,&nbsp;those
+        e-mails will still be delivered.<br />
+        <br />
+        <span style="font-weight: bold;">Completed</span> means that all e-mail messages
+        have been sent for the Campaign. You cannot change the Status or restart a
+        Campaign after it has been completed.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>New E-Mail Message</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Subject:</td>
+
+        <td>Enter the e-mail Subject that will be placed in the Subject in each e-mail
+        message sent by this Campaign.</td>
+      </tr>
+
+      <tr>
+        <td>Format:</td>
+
+        <td>Select the format for the Campaign. If you select plain text, then you will
+        be able to enter a plain text body. If you select HTML, then you will be able to
+        select a Page.</td>
+      </tr>
+
+      <tr>
+        <td>Body:</td>
+
+        <td>
+          <p>This field appears if you selected plain text for the format. Enter the body
+          for the plain text e-mail here.</p>
+
+          <p>NOTE: After a Campaign is created, you may only edit the body of a plain
+          text Campaign (not an HTML Campaign).</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>My Page to Send:</td>
+
+        <td>This field appears if you selected HTML for the format. Select any Page that
+        you have access to. This Page will be placed in the Body field in each e-mail
+        message sent by this Campaign.<br />
+        <br />
+        TIP: You should not select a complex Page to send, like one with a shared
+        multi-level Menu, or Custom Form Page. Rendering them in an e-mail message might
+        break some of their functionality. Typically, your Site Designer will add a Page
+        Style specifically designed for any Pages that are going to be e-mailed.</td>
+      </tr>
+
+      <tr>
+        <td>Body Preview:</td>
+
+        <td>
+          <p>This field appears if you selected HTML for the format. You will see a
+          preview of the Page that was selected (above) as a confirmation that you have
+          selected the correct Page you wish the e-mail.</p>
+
+          <p>NOTE: After a Campaign is created, you may only edit the body of a plain
+          text Campaign (not an HTML Campaign).</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>E-Mail Message To My Contact Groups</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="font-style: italic;">All&nbsp;Contact Groups you have access to are
+        listed here.</td>
+
+        <td>
+          Select from any of your Contact Groups that you wish to Ignore, Include, and
+          Exclude in this Campaign. &nbsp;These three options give you total control of
+          who will and who will not receive an e-mail from this Campaign.<br />
+          <br />
+
+          <table style="width: 100%;">
+            <tbody>
+              <tr>
+                <td style="vertical-align: top;"><span style=
+                "font-weight: bold;">Ignore</span> the Contacts in these groups unless
+                they are also in any of the Included groups.</td>
+
+                <td style="vertical-align: top;"><span style=
+                "font-weight: bold;">Include</span> every Contact in these groups that
+                are not also in any of the Excluded groups.</td>
+
+                <td style="vertical-align: top;"><span style=
+                "font-weight: bold;">Exclude</span> all Contacts from these groups.</td>
+              </tr>
+            </tbody>
+          </table><br />
+          NOTE: The number listed next to each Contact Group is not the total number of
+          Contacts in the group, but rather the number of Contacts with a valid e-mail
+          addresses.<br />
+          <br />
+          IMPORTANT: Only those Subscribers that have already "opted-in" the Included
+          Contact Groups BEFORE the Campaign was created will be included.
+
+          <p>For unix web servers (i.e. not Windows), if name info can be found for the
+          recipient's Contact, then the name will be included in the "To:" field of the
+          e-mail, along with the e-mail address (e.g. Andrew Smith
+          &lt;example@example.com&gt;). The format of the name is the same format that is
+          used for the ^^name^^ mail merge field. In summary, if the Contact has a
+          nickname, then the nickname is used, otherwise a combination of the salutation,
+          first name, last name, and suffix is used, depending on what values exist. If
+          no Contact or name info can be found, or this is a Windows server, then the
+          "To:" field will only contain the e-mail address.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Also send message to the following e-mail address:</td>
+
+        <td>You can optionally enter another e-mail address to send this Campaign too,
+        regardless of whether they are in any of the groups listed above.<br />
+        <br />
+        NOTE: If a matching Contact is not found for this&nbsp;e-mail address, the system
+        will create a Contact for the new Subscriber after sending the e-mail message.
+        &nbsp;This will allow them to "opt-out" if necessary.<br />
+        <br />
+        TIP: You can use this feature to send yourself or someone else a "proof" of the
+        e-mail Campaign before you send it to your Subscribers.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>E-Mail Message From</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>From Name:</td>
+
+        <td>Enter the e-mail message's "From" field. &nbsp;This is not the sender's
+        e-mail address, but the name.<br />
+        <br />
+        For example, the From Name in this e-mail header "FROM: Jack Bauer
+        &lt;jbauer@24.com&gt;" would be "Jack Bauer"<br />
+        <br />
+        TIP: Typically, you would use either your full name, department,
+        or&nbsp;organization name.</td>
+      </tr>
+
+      <tr>
+        <td>From E-mail Address:</td>
+
+        <td>Enter the sender's e-mail address.<br />
+        <br />
+        NOTE: You must use a valid e-mail address for this value.<br />
+        <br />
+        IMPORTANT:&nbsp;Make sure the domain portion of this e-mail address matches your
+        website domain. &nbsp;If not,&nbsp;many receiving mail servers will detect this
+        difference, flag your messages as spam, and will not deliver your e-mails (many
+        times without bouncing back any non-delivery notices).</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>E-Mail Message Reply To</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Reply to E-mail Address:</td>
+
+        <td>When a Subscriber replies to this Campaign,&nbsp;their reply e-mail is
+        delivered to this inbox.<br />
+        <br />
+        NOTE: You must use a valid e-mail address for this value.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>E-Mail Message Delivery Schedule</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Send at this Date &amp; Time:</td>
+
+        <td><span style="font-weight: bold;">Date &amp; Time:</span> Enter the Date and
+        Time that you would like the Campaign Scheduler to start sending this Campaign
+        (format: m/d/yyyy h:mm AM/PM). &nbsp;<br />
+        <br />
+        <span style="font-weight: bold;">Blank:</span> Leave this&nbsp;field blank if you
+        want to the Campaign Scheduler to start sending the Campaign immediately.<br />
+        <br />
+        NOTE: If you do not see this field on your screen, the Campaign Scheduler is not
+        enabled. You can still send your Campaigns at any time by clicking "Send
+        Campaign". The scheduled delivery feature must be setup for your account. If you
+        would like us to enable this feature, please contact us.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><br />
+  NOTE: E-mail messages are sent individually, so it may take some time for the entire
+  Campaign to be delivered.</p>
+
+  <p>NOTE: For HTML Campaigns, when a Campaign is created a unique tracking code will
+  automatically be added to the end of each returning link (this is a link that comes
+  back to your site) that does not already contain a tracking code.</p>
+
+  <p>NOTE: Because the majority of e-mail clients do not support JavaScript, E-mail
+  Campaigns will not include it. This means Pages that contain Ad Regions, Photo
+  Galleries, or any other type of JavaScript should not be e-mailed.</p>
+</body>
+</html>

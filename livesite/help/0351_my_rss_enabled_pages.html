@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>My RSS Enabled Pages</h1>
+
+  <p>This screen displays all the Pages that you have access to that also have RSS
+  enabled.</p>
+
+  <p>RSS is a web content syndication format, and its name is an acronym for Really
+  Simple Syndication. The pages listed here will broadcast an RSS feed. RSS allows site
+  visitors to be informed when content changes on your website. A Page has to be a either
+  a Form List View, Calendar View, Catalog, Catalog Detail, or Order Form Page Type, and
+  it has to be in a Public Folder. RSS is enabled for these Pages automatically.</p>
+
+  <h2>Channel Title and Description</h2>
+
+  <p>The content for the Channel Title and Description elements is determined in
+  different ways, depending on the Page Type (see below). Fields are listed in the order
+  that they are looked at for a value. If a field does not have a value, then the next
+  field in the list is looked at.</p>
+
+  <p>For Form List View, Calendar View, and Order Form Page Types:</p>
+
+  <ul>
+    <li>Channel Title: Page's Web Browser Title.</li>
+
+    <li>Channel Description: Page's Web Browser Description.</li>
+  </ul>
+
+  <p>For Catalog and Catalog Detail Page Types:</p>
+
+  <ul>
+    <li>Channel Title: Product Group's Web Browser Title, Product Group's Short
+    Description, Page's Web Browser Title.</li>
+
+    <li>Channel Description: Product Group's Web Browser Description, Product Group's
+    Full Description (converted to plain text), Page's Web Browser Description.</li>
+  </ul>
+
+  <h2>Form List View Pages</h2>
+
+  <p>Up to 50 of the most recent Submitted Forms are available, based on the RSS Element
+  fields defined in the Custom Form. NOTE: In order for RSS to be enabled for a Form List
+  View Page, there has to be at least one RSS Element defined in the Custom Form fields
+  associated with the Form List View Page.</p>
+
+  <p>The RSS feature will use the Form Item View page property from the Form List View in
+  order to determine which page to link each RSS item to. If the Form List View field is
+  left unselected, then the RSS feature will attempt to find the correct Page by looking
+  for a link in the layout of the Form List View.</p>
+
+  <h2>Calendar View Pages</h2>
+
+  <p>The soonest 50 upcoming Events across all Calendars displayed on the Page are
+  included in the RSS feed. RSS item elements found in the Calendar View Page feeds
+  are:</p>
+
+  <ul>
+    <li>Item Category: Calendar's Name.</li>
+
+    <li>Item Title: Calendar Event's Name.</li>
+
+    <li>Item Description: Calendar Event's Short Description.</li>
+  </ul>
+
+  <h2>Catalog, Catalog Detail, and Order Form Pages</h2>
+
+  <p>All Products that exist in the current Product Group will appear as items in the
+  feed. For Catalog pages, Products from all levels of the Catalog will appear in the
+  feed, starting from the Product Group that is currently being viewed. Please be aware
+  that an RSS link will not appear on a Catalog Detail Page that is showing a Product,
+  instead of a Product Group.</p>
+
+  <p>RSS item elements found in these feeds are listed below. The fields are listed in
+  the order that they are looked at for a value. If a field does not have a value, then
+  the next field in the list is looked at.</p>
+
+  <ul>
+    <li>Item Title: Product's Web Browser Title, Product's Short Description.</li>
+
+    <li>Item Description: Product's Web Browser Description, Product's Full Description
+    (converted to plain text and only used if it is not the same as the Short
+    Description), Parent Product Group's Web Browser Description, Parent Product Group's
+    Full Description (converted to plain text).</li>
+  </ul>
+
+  <p>TIP: You can use an RSS feed for Catalog, Catalog Detail, and Order Form Pages to
+  create a Data Feed for importing into other systems such as Google Merchant Center,
+  allowing prospects to better find your Products through search engines and other public
+  websites.</p>
+</body>
+</html>

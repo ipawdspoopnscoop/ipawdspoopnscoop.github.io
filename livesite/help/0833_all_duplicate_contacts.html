@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+
+<h1>All Duplicate Contacts</h1>
+
+<p>This screen displays all duplicate Contacts, which are any Contacts that share the same e-mail address. You can merge any or all duplicate Contacts into a single Contact, removing the duplicates.</p>
+
+<h3>Children and Orphan Contacts</h3>
+<p>Before you merge Contacts, it is important to understand how they are merged safely, so that unverified data is not accidentally added to any User accounts, and that no data is lost unnecessarily.  There are two types of duplicate Contacts. "Child" Contacts are those Contacts that are connected to a User account. Child Contacts always appear at the top of its group of duplicate Contacts on this screen, and there is a checkbox visible that is linked to their associated User account.  "Orphan" Contacts are those Contacts that are NOT connected to a User account. Orphan Contacts contain unverified data with respect to User account information.</p>
+
+<h3>Merging Rules</h3>
+<p>When a group of Contacts are merged together, and all Contacts in selected group are Orphans, then each Orphan's data fields are merged together into the newest Orphan Contact.  Only data fields that are empty are merged, no data is overwritten.  The last modified date for the remaining Contact is not modified. The older Orphan Contacts are then PERMENENTLY DELETED from the database, and the remaining Contact is no longer visible in the Duplicate Contacts screen.</p>
+
+<p>When a group of Contacts are merged together, and one of the Contacts in selected group is a Child Contact, then each all Orphan's are NOT merged together into the Child Contact.  This is done because we cannot verify that any Orphan Contact data is valid, so it cannot be added to a User account's contact data. The last modified date for the Child Contact is not modified. All Orphan Contacts are simply PERMENENTLY DELETED from the database, and the remaining Child Contact is no longer visible in the Duplicate Contacts screen.</p>
+
+<p>When a group of Contacts are merged together, and all are Child Contacts that share the same e-mail address, they will be ignored.  If necessary, you can manually merged these Contacts since a closer inspection will reveal that their associated User account does not share the same e-mail address.</p>
+
+<p>WARNING: Due to the destructive and permanent nature of merging contact data, only Site Managers, Site Designer, and Site Administrators can merge Contacts. Once Contacts are merged, they cannot be unmerged - the merged Contacts are deleted from the database.  Therefore, we highly recommend that you back up by export all Duplicate Contacts before attempting to merge any contacts. Realize that if you do need to import your previously saved Contacts, only orphan Contacts will be created.</p>
+</body>
+</html>

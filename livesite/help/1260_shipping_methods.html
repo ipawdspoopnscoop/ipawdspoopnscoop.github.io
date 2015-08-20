@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Shipping Methods</h1>
+
+  <p>This screen displays all Shipping Methods.</p>
+
+  <p>Shipping Methods define each shipping carrier and their methods of
+  shipment,&nbsp;and the fees for each based on the available Shipping Zone for each
+  Shipping Method.</p>
+
+  <p>For each Shipping Method, you can set Base Rate, Primary Weight Rate, Secondary
+  Weight Rate and an Item Rate in order to determine the cost of shipping.</p>
+
+  <p>Shipping Methods are displayed on the Shipping Methods Page &nbsp;All available
+  Shipping Methods that can deliver the Products to each destination are always displayed
+  to the Customer starting with the least expensive first.</p>
+
+  <h2>Guaranteed Arrival Dates</h2>
+
+  <p>For Each Shipping Method you can also set the number of day the shipment is in
+  transit. These transit days are important if you are using the optional Arrival Date
+  feature and therefore only offer the Customer the Shipping Methods that you can
+  guarantee will deliver the Products to the recipients on time. Transit days can also be
+  impacted by the destination Country so you can also adjust the transit days for any
+  Country.</p>
+
+  <p>Base Transit Days is used in determining the number of transit days (calendar days)
+  for that Shipping Method. If Adjust Transit is checked, then the Transit Adjust Days
+  for the Country of the recipient will be added to the Base Transit Days of the Shipping
+  Method.</p>
+
+  <p>If a Shipping Cut-off is configured for an Arrival Date, then the Preparation Time
+  for Products, transit values for Shipping Methods, and Transit Adjustment Days for
+  Countries are all ignored.</p>
+
+  <h2>Street Address &amp; Post Office Box Delivery</h2>
+
+  <p>If Allow Street Address is checked then this Shipping Method may be available for a
+  recipient with a street address. (This is determined by a shipping address entered by
+  the Customer starting with a numeric character).</p>
+
+  <p>If Allow PO Box is checked then this Shipping Method may be available for a
+  recipient with a PO box (shipping address entered starts with a non-numeric
+  character).</p>
+
+  <p>You will also need to set the Allowed Zones that this Shipping Method can deliver
+  too.</p>
+
+  <h2>Shipping Selection Process</h2>
+
+  <p>1) The Customer selects the "Check Out" button from the Shopping Cart Page or the
+  Express Order Page.<br />
+  <br />
+  The Cart's "Next Page (with shipping)" Page will be displayed if there are shippable
+  Products in the Cart. This Next Page should be a&nbsp;Shipping Address &amp; Arrival
+  Page. This Shipping Address &amp; Arrival Page will be shown for each recipient in the
+  Cart.</p>
+
+  <p>2) The Customer will enter the shipping address and select a&nbsp;Requested Arrival
+  Date and press the "Continue" button.</p>
+
+  <p>If no Shipping Methods can be found that will guarantee arrival of the shipment by
+  the&nbsp;Requested Arrival Date, the Shipping Address &amp; Arrival Page will appear
+  again with an error instructing theCustomer to change his/her Requested Arrival Date
+  and press "Continue" again.</p>
+
+  <p>3) If at least one Shipping Method is found, the Customer will be sent to the
+  Shipping Method Page for the recipient.</p>
+
+  <p>If there is a Product in the Cart that is not allowed to be shipped to the
+  recipient's Country or State, the Product Restriction Message is displayed to the
+  Customer on the Shipping Methods Page and the Customer is required to remove the
+  Product from the Cart in order to continue with the checkout process.<br />
+  <br />
+  the system&nbsp;will look for all Shipping Methods for the recipient's address.&nbsp;
+  the system will then refine the list of Shipping Methods to only those that can get the
+  Products to the destination on or before the selected Requested Arrival Date.</p>
+
+  <p>4) If the Customer started the checkout process from a Shopping Cart Page, they will
+  be directed to the Billing Information Page to enter their payment information and
+  proceed to finalize their Order.&nbsp;If the Customer started the checkout process from
+  an Express Order Page, they will be sent back to the Express Order Page to enter their
+  payment information and proceed to finalize their Order.</p>
+
+  <h3>Available Shipping Methods Calculation</h3>
+
+  <p>It is important to understand how the system determines what Shipping Methods are
+  available for each recipient during the checkout process. &nbsp;Here is the
+  calculation, if there is no Shipping Cut-off for the Arrival Date:</p>
+
+  <p>Available Shipping Methods = Shipping Methods (ZONE MATCH): (longest
+  Product:PreparationTime) + SHIP:BaseTransitDays + (If SHIP:AdjTransit = Y then
+  CTRY:TransitAdjDays else 0) &lt;= Days until Requested Arrival Date (adjusted for End
+  of Day Time).</p>
+
+  <p>If there is a Shipping Cut-off for the selected Arrival Date, then the system will
+  look at the Cut-off Date &amp; Time in order to determine if the Shipping Method should
+  still be available.</p>
+
+  <p>If one or more Available Shipping Methods are found then the shipping charges for
+  each will be calculated and displayed to the Customer as follows:</p>
+
+  <p>Shipping Method&nbsp;Shipping Surcharge = (SHIP:BaseRate) + (ZONE:BaseRate) + For
+  all non-Free Shipping Products: (Product:PrimaryWeightPoints * SHIP:PrimaryWeightRate *
+  ProdQty) + (Product:SecondaryWeightPoints * SHIP:SecondaryWeightRate * ProdQty) +
+  (SHIP:ItemRate * ProdQty) + (Product:PrimaryWeightPoints * ZONE:PrimaryWeightRate *
+  ProdQty) + (Product:SecondaryWeightPoints * ZONE:SecondaryWeightRate * ProdQty) +
+  (ZONE:ItemRate * ProdQty) + (Product:ExtraShippingCost * ProdQty)</p>
+
+  <p>TIP: The Extra Shipping Cost portion of the calculation above is generally used for
+  Products that might require extra preparation time and/or expense.</p>
+
+  <p>NOTE: If no Shipping Methods can be found for the shipping address, an error message
+  will be displayed on the Shipping Methods Page and the Customer will need to contact
+  you.&nbsp;So it's a good idea to at least create one Shipping Method that covers all
+  your Shipping Zones if that is the appropriate solution for you.</p>
+</body>
+</html>

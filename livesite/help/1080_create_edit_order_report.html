@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Create / Edit Order Report</h1>
+
+  <p>This screen displays the Order Report and allows you to change the summary layout,
+  filters, and save the Order Report. Each time you run a saved Order Report, there is no
+  delay the data, it is always reported in real-time.</p>
+
+  <h2>Summarizing &amp; Filtering Order Reports</h2>
+
+  <p>Order Reports allow you to summarize (totals) for almost every data point stored for
+  each Order. &nbsp;You can optional filter the Order Report to restrict the Orders that
+  are included in the report.<br />
+  <br />
+  Here is a list of all the data points that are stored for each Order, some are used to
+  summarize the report, and others to filter the report. &nbsp;Here is a list of most of
+  the data points available for your reports:</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>General</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Year:</td>
+
+        <td>You can summarize or filter all Orders by calendar years.</td>
+      </tr>
+
+      <tr>
+        <td>Month:</td>
+
+        <td>You can summarize or filter all Orders by calendar months.</td>
+      </tr>
+
+      <tr>
+        <td>Day:</td>
+
+        <td>You can summarize or filter all Orders by calendar days.</td>
+      </tr>
+
+      <tr>
+        <td>Order Status:</td>
+
+        <td>You can summarize or filter all Orders by the status of the Order.<br />
+        <span style="font-weight: bold;">Complete</span> Orders that have been submitted
+        successfully.<br />
+        <span style="font-weight: bold;">Incomplete</span> Orders that have not been
+        submitted yet (Saved Carts).</td>
+      </tr>
+
+      <tr>
+        <td>Order Number:</td>
+
+        <td>You can filter all Orders by the Order Number.</td>
+      </tr>
+
+      <tr>
+        <td>Transaction ID:</td>
+
+        <td>You can filter all Orders by the unique ID returned from the payment gateway
+        (if enabled).</td>
+      </tr>
+
+      <tr>
+        <td>Authorization Code:</td>
+
+        <td>You can filter all Orders by the returned transaction status code from the
+        payment gateway (if enabled).</td>
+      </tr>
+
+      <tr>
+        <td>Special Offer Code:</td>
+
+        <td>You can summarize or filter all Orders by Offer Code (if entered by the
+        Customer during the checkout process).</td>
+      </tr>
+
+      <tr>
+        <td>Referral Source Code:</td>
+
+        <td>You can summarize or filter all Orders by the optional "How did you here
+        about us?" question asked of Customers during checkout.</td>
+      </tr>
+
+      <tr>
+        <td>Reference Code:</td>
+
+        <td>You can summarize or filter all Orders by it's unique Reference Code.
+        &nbsp;This value can be used to recall a Saved Cart on a Shopping Cart or Express
+        Order Page using the following format:<br />
+        <br />
+        /pages/ExampleShoppingCartPage?r=4TR674D <span style=
+        "font-style: italic;">or</span><br />
+        /pages/ExampleExpressOrderPage?r=4TR674D<br />
+        <br />
+        Where "4TR674D" is the Reference Code for the Saved Cart. &nbsp;You can get this
+        value from the bottom of the Shopping Cart Page before closing the browser
+        session, or by viewing Incomplete Orders.</td>
+      </tr>
+
+      <tr>
+        <td>Tracking Code:</td>
+
+        <td>You can summarize or filter all Orders by the LAST Tracking Code that is
+        added to any of your website links that the Customer clicked on.</td>
+      </tr>
+
+      <tr>
+        <td>Referring URL:</td>
+
+        <td>You can summarize or filter all Orders by the actual URL of the previously
+        viewed web browser page of the Customer.<br />
+        For example: "http://www.previouswebsite.com/anotherpage.html"</td>
+      </tr>
+
+      <tr>
+        <td>Currency:</td>
+
+        <td>You can summarize or filter all Orders by the Currency the Customer was
+        viewing when the Order was placed.</td>
+      </tr>
+
+      <tr>
+        <td>Customer's IP Address:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's IP Address.</td>
+      </tr>
+
+      <tr>
+        <td>Product Name:</td>
+
+        <td>You can filter all Orders by and of the Product ID ordered.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Payment</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Payment Method:</td>
+
+        <td>You can summarize or filter all Orders by the Payment Method.<br />
+        <span style="font-weight: bold;">None</span> if the order total was zero.<br />
+        <span style="font-weight: bold;">Credit/Debit Card</span> if the Customer entered
+        their credit/debit card information on the Order Preview Page or the Express
+        Order Page.<br style="font-weight: bold;" />
+        <span style="font-weight: bold;">PayPal</span> if the Customer used their PayPal
+        account through the Paypal website.<br />
+        <span style="font-weight: bold;">Offline Payment</span> if the Customer selected
+        to pay offline.</td>
+      </tr>
+
+      <tr>
+        <td>Card Type:</td>
+
+        <td>You can summarize or filter all Orders by the Card Type, if Credit/debut Card
+        was used.<br />
+        <span style="font-weight: bold;">MasterCard</span><br style=
+        "font-weight: bold;" />
+        <span style="font-weight: bold;">VISA</span><br style="font-weight: bold;" />
+        <span style="font-weight: bold;">American Express</span><br style=
+        "font-weight: bold;" />
+        <span style="font-weight: bold;">Discover</span></td>
+      </tr>
+
+      <tr>
+        <td>Cardholder:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Cardholder
+        Name.</td>
+      </tr>
+
+      <tr>
+        <td>Card Number:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Credit/Debit Card
+        Number.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Billing Information</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Custom Field #1:</td>
+
+        <td>You can summarize or filter all Orders by the optional Custom Field #1 from
+        the Billing Information Page, or the Express Order Page.</td>
+      </tr>
+
+      <tr>
+        <td>Custom Field #2:</td>
+
+        <td>You can summarize or filter all Orders by the optional Custom Field #2 from
+        the Billing Information Page, or the Express Order Page.</td>
+      </tr>
+
+      <tr>
+        <td>Salutation:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing
+        Salutation.</td>
+      </tr>
+
+      <tr>
+        <td>First Name:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing First
+        Name.</td>
+      </tr>
+
+      <tr>
+        <td>Last Name:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Last
+        Name.</td>
+      </tr>
+
+      <tr>
+        <td>Company:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing
+        Company.</td>
+      </tr>
+
+      <tr>
+        <td>Address 1:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Address
+        (line 1).</td>
+      </tr>
+
+      <tr>
+        <td>Address 2:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Address
+        (line 2).</td>
+      </tr>
+
+      <tr>
+        <td>City:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Address
+        City.</td>
+      </tr>
+
+      <tr>
+        <td>State:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Address
+        State/Province.</td>
+      </tr>
+
+      <tr>
+        <td>Zip Code:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Address
+        Zip/Postal Code.</td>
+      </tr>
+
+      <tr>
+        <td>Country:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Address
+        Country.</td>
+      </tr>
+
+      <tr>
+        <td>Phone Number:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Phone
+        Number.</td>
+      </tr>
+
+      <tr>
+        <td>Fax Number:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Billing Fax
+        Number.</td>
+      </tr>
+
+      <tr>
+        <td>E-mail Address:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's E-mail Address.</td>
+      </tr>
+
+      <tr>
+        <td>Opt-in Status:</td>
+
+        <td>You can summarize or filter all Orders by the Customer's Contact Opt-in
+        Status.</td>
+      </tr>
+
+      <tr>
+        <td>PO Number:</td>
+
+        <td>You can summarize or filter all Orders by the optional PO Number entered by
+        the Customer on the Billing Information Page or the Express Order Page.</td>
+      </tr>
+
+      <tr>
+        <td>Tax Status:</td>
+
+        <td>You can summarize or filter all Orders by the Order Tax (if applicable).</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Shipping Information</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Salutation:</td>
+
+        <td>You can filter all Orders by any Recipient's Salutation.</td>
+      </tr>
+
+      <tr>
+        <td>First Name:</td>
+
+        <td>You can filter all Orders by any Recipient's First Name.</td>
+      </tr>
+
+      <tr>
+        <td>Last Name:</td>
+
+        <td>You can filter all Orders by any Recipient's Last Name.</td>
+      </tr>
+
+      <tr>
+        <td>Company:</td>
+
+        <td>You can filter all Orders by any Recipient's Company.</td>
+      </tr>
+
+      <tr>
+        <td>Address 1:</td>
+
+        <td>You can filter all Orders by any Recipient's Address (line 1).</td>
+      </tr>
+
+      <tr>
+        <td>Address 2:</td>
+
+        <td>You can filter all Orders by any Recipient's Address (line 2).</td>
+      </tr>
+
+      <tr>
+        <td>City:</td>
+
+        <td>You can filter all Orders by any Recipient's City.</td>
+      </tr>
+
+      <tr>
+        <td>State:</td>
+
+        <td>You can filter all Orders by any Recipient's State/Province.</td>
+      </tr>
+
+      <tr>
+        <td>Zip Code:</td>
+
+        <td>You can filter all Orders by any Recipient's Zip/Postal Code.</td>
+      </tr>
+
+      <tr>
+        <td>Country:</td>
+
+        <td>You can filter all Orders by any Recipient's Country.</td>
+      </tr>
+
+      <tr>
+        <td>Phone Number:</td>
+
+        <td>You can filter all Orders by any Recipient's Phone Number.</td>
+      </tr>
+
+      <tr>
+        <td>Ship to Name:</td>
+
+        <td>You can filter all Orders by any Recipient's Ship To Name (from the Customers
+        My Account Page Address Book)</td>
+      </tr>
+
+      <tr>
+        <td>Arrival Date Code:</td>
+
+        <td>You can filter all Orders by any Recipient's Arrival Date Code.</td>
+      </tr>
+
+      <tr>
+        <td>Shipping Method Code:</td>
+
+        <td>You can filter all Orders by any Recipient's Shipping Method Code.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><br />
+  TIP: Order Reports are shared among all Commerce Managers, so you can setup reports for
+  others to run and view. &nbsp;However, you should also take care when editing someone
+  else's report.</p>
+
+  <p>NOTE: When you add a Filter, it is not saved to the report until you click "Save
+  &amp; Run".</p>
+
+  <p>NOTE: Deleting a Order Report does not delete any of the Order data.</p>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Create / Edit Arrival Date</h1>
+
+  <p>This screen displays the specific of an Arrival Date:</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Arrival Date</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Arrival Date:</td>
+
+        <td>Enter the Arrival Date that all available Shipping Methods will be checked
+        against to see if they can deliver by this date.<br />
+        <br />
+        TIP: To create an "At Once" Arrival Date, set this value to "00/00/0000".<br />
+        To create a "Christmas" Arrival Date, set this value&nbsp;to 12/25/XXXX (where
+        XXXX is the current year).</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Or allow Customer to enter this Arrival Date during checkout</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Display Custom Field:</td>
+
+        <td>Check this box if you want to allow all Customers to enter their own
+        Requested Arrival Date on the Shipping and Arrival Page.<br />
+        <br />
+        TIP: You should only have one Arrival Date enabled as a Display Custom
+        Field.</td>
+      </tr>
+
+      <tr>
+        <td>Latest Allowed Arrival Date:</td>
+
+        <td>Enter a date for this field if you want to set the latest custom Arrival Date
+        that a Customer is allowed to enter. You might want to use this feature if you
+        want to prevent a Customer from selecting a date that is too far into the future,
+        because product and/or shipping costs might be different at that point in
+        time.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Arrival Date Code for Order Reporting</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Arrival Date Code:</td>
+
+        <td>Enter the code that will be saved and exported with the Order data if this
+        Arrival Date is selected by the Customer.<br />
+        <br />
+        For example: "XMAS".</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Order Preview Page Display Options</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Arrival Date Name:</td>
+
+        <td>Enter the selection name displayed to the Customer on the Shipping and
+        Arrival Page.<br />
+        <br />
+        For example: "Christmas Day".</td>
+      </tr>
+
+      <tr>
+        <td>Arrival Date Description:</td>
+
+        <td>Enter the description of this Arrival Date that will be displayed to the
+        Customer on the Shipping and Arrival Page.<br />
+        <br />
+        For example: "We guarantee your gift will arrive by Christmas Day."</td>
+      </tr>
+
+      <tr>
+        <td>Sort Order:</td>
+
+        <td>Enter the number that will be used to determine the display order of all
+        enabled Arrival Dates displayed on the Shipping and Arrival Page.<br />
+        <br />
+        For example:&nbsp;"1" would be displayed before "2".</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Arrival Date Availability</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Start Date:</td>
+
+        <td>The first date that this Arrival Date option is displayed to Customers on the
+        Shipping and Arrival Page. This Arrival Date option will become available at
+        12:00 AM on the date that is entered here. Format is m/d/yyyy.</td>
+      </tr>
+
+      <tr>
+        <td>End Date:</td>
+
+        <td>The last date that this Arrival Date option is displayed to Customers on the
+        Shipping Address &amp; Arrival Page. This Arrival Date option will no longer be
+        available at the "End of Day Time" (see Site Settings) on the date that is
+        entered here. Format is m/d/yyyy.</td>
+      </tr>
+
+      <tr>
+        <td>Status Override:</td>
+
+        <td>Whether this Arrival Date is enabled (displayed to the Customer) or not. The
+        Status overrides the Start and End Dates.</td>
+      </tr>
+
+      <tr>
+        <td>Selected by Default:</td>
+
+        <td>When the Shipping and Arrival Page is displayed to the Customer, this Arrival
+        Date will be selected by default. There should only be one Arrival Date that has
+        this set. If you want to "confirm" that the Customer actively selects an Arrival
+        Date, don't set this option for any Arrival Dates on your Website.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Shipping Cut-offs</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>Shipping Cut-offs are generally used around holidays when you want to
+        guarantee delivery before the holiday as long as Customers submit their Order by
+        a certain date and time. Shipping Cut-offs override the Preparation Time for
+        Products, transit values for Shipping Methods, and Transit Adjustment Days for
+        Countries for a specific Arrival Date and Shipping Method.<br />
+        <br />
+        For example, if you want to allow your Customers to select Standard shipping for
+        Christmas delivery until 12/20/2010 3:00 PM, then you should create a Shipping
+        Cut-off for the Christmas Arrival Date where the Shipping Method is set to
+        Standard and the Cut-off Date &amp; Time is 12/20/2010 3:00 PM. You can also
+        create Shipping Cut-offs for other Shipping Methods (e.g. Express, Next
+        Day).</td>
+      </tr>
+
+      <tr>
+        <td>Shipping Method:</td>
+
+        <td>The Shipping Method that this Shipping Cut-off applies to.</td>
+      </tr>
+
+      <tr>
+        <td>Cut-off Date &amp; Time:</td>
+
+        <td>The date and time that the selected Shipping Method will be available until
+        for this Arrival Date. Format is m/d/yyyy h:mm AM/PM.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <p>IMPORTANT: You should only have one "At Once" Arrival Date ("00/00/0000") enabled at
+  any time on your website. Also, you should only have one Arrival Date using the
+  "Display Custom Field"&nbsp;enabled at any time on your website.</p>
+</body>
+</html>

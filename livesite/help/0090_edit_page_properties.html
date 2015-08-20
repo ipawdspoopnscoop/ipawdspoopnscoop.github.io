@@ -1,0 +1,910 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+  <h1>Edit Page Properties</h1>
+
+  <p>This screen displays the Page Properties which define the name of the Page and the
+  interactive features of the Page.</p>
+
+  <p>NOTE: If you are creating a new Page, only the basic Page Properties are required.
+  &nbsp;All other Page Properties are hidden, but are visible once the Page has been
+  created.</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Page Name</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Page Name:</td>
+
+        <td>The name of this Page (no spaces please). This value will be used to identify
+        the page on your Web server. This value must be unique among all website
+        Pages.<br />
+        <br />
+        NOTE: Menus are linked to Pages by the Page's name, so be sure to update any Menu
+        Items that might be linked to the Page if you change the Page's name.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Page Access Control,&nbsp;Design, and Common Content</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Folder:</td>
+
+        <td>This is the Folder that the page will be located in. The Folder determines
+        the "view" and "edit" access to the Page.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Override Folder's Default Page Styles</h3>
+        </td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>Desktop Page Style:</td>
+
+        <td>
+          <p>Select "Default" to inherit the value from this Page's Parent Folder.
+          Otherwise, select one of the Desktop Page Styles that have been created by the
+          Site Designers.<br />
+          <br />
+          NOTE: Desktop Page Styles are any System Page Style that is NOT a "Mobile One
+          Column" Page Style (or a Custom Page Style that does not have <span style=
+          "font-family: monospace;">one_column_mobile</span> CSS class assigned to it's
+          HTML &lt;body&gt; tag.)</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Mobile Page Style:</td>
+
+        <td>Select "Default" to inherit the value from this Page's Parent Folder.
+        Otherwise, select one of the Mobile Page Styles that have been created by the
+        Site Designers.<br />
+        <br />
+        NOTE: Mobile Page Styles are any System Page Style that is a "Mobile One Column"
+        Page Style (or a Custom Page Style that has <span style=
+        "font-family: monospace;">one_column_mobile</span> CSS class assigned to it's
+        HTML &lt;body&gt; tag.)</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Interactive Page Feature</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Page Type:</td>
+
+        <td>
+          A Page's interactive features are determined by it's "Page Type". &nbsp;Page
+          Types turn simple web pages into data-driven pages like an order form page,
+          custom form page, login page,&nbsp;my account page, shopping cart page, member
+          directory, etc.<br />
+          <br />
+          By linking Pages with different Page Types together, you can create customized
+          website applications without any programming knowledge. Keep in mind that some
+          Page Types are designed to be chained to other,&nbsp;specific Page Types.<br />
+          <br />
+          Once you select a Page Type, the Page Type Properties will be visible. Here are
+          the available Page Types you can select from:<br />
+          <br />
+          <br />
+          <em>* = Page Types for Manager and above.</em><br />
+          <br />
+
+          <h3>Standard</h3><br />
+          <span style="font-weight: bold;">Standard:</span> This Page displays simple
+          content and has no interactive features.<br />
+          <br />
+          <br />
+
+          <h3>Miscellaneous</h3><br />
+          <strong>Change Password *:</strong> This Page will be displayed automatically
+          when a User attempts to change their password.<br />
+          <br />
+          <strong>Change Random Password *:</strong> This Page will be displayed
+          automatically when a User logs in in for the first time using a temporary
+          password, requesting them to enter their own password.<br />
+          <strong><br /></strong> <a href="0310_email_a_friend.html" onclick=
+          "update_help_content('0310_email_a_friend'); return false;" style=
+          "font-weight: bold;">E-Mail a Friend</a><strong>:</strong> This Page displays a
+          form for the Visitor so he/she can e-mail a link to a friend. All Visitors,
+          except Users with edit rights to the page, are limited, by IP address, to 10
+          e-mails per day in order to prevent spam.<br />
+          <br />
+          <strong>Error *:</strong> This Page will be displayed automatically if a Page
+          or File is requested from the website and cannot be found.<br />
+          <br />
+          <a href="0095_folder_view.html" onclick=
+          "update_help_content('0095_folder_view'); return false;" style=
+          "font-weight: bold;">Folder View</a><span style="font-weight: bold;">:</span>
+          This Page displays Folders, Pages (which are included in site search), and
+          Files that are located in the same Folder as the Folder View Page.<br />
+          <strong><br />
+          Forget&nbsp;Password *:</strong> This Page allows a site Visitor to request
+          their password be reset and a temporary password sent to their User account's
+          e-mail address. &nbsp;<span style="font-style: italic;">This feature must be
+          enabled in Settings for a link to this Page to appear on the Login
+          Page.</span><br />
+          <br />
+          <span style="font-weight: bold;">Login *:</span>&nbsp;This Page will be
+          displayed automatically if a Page or File is requested from the website and the
+          Visitor does not have access to it (because they haven't logged in yet, for
+          example).<br />
+          <br />
+          <span style="font-weight: bold;">Logout *:</span> This Page will be displayed
+          automatically when the User logs out of the website.<br />
+          <br />
+          <a href="0100_photo_gallery.html" onclick=
+          "update_help_content('0100_photo_gallery'); return false;" style=
+          "font-weight: bold;">Photo Gallery</a><span style="font-weight: bold;">:</span>
+          This Page displays all "Albums" and "Photos" located in the same Folder as the
+          Photo Gallery Page.<br />
+          <br />
+          <a href="0101_search_results.html" onclick=
+          "update_help_content('0101_search_results'); return false;" style=
+          "font-weight: bold;">Search Results</a> <span style=
+          "font-weight: bold;">*:</span> This Page will be displayed automatically when
+          the Site Search feature is accessed.<br />
+          <br />
+          <br />
+
+          <h3>Registration</h3><br />
+          <span style="font-weight: bold;">Registration Entrance *:</span> This Page will
+          be displayed automatically when a Visitor attempts to access a Page or File in
+          a Guest or Registration Folder.<br />
+          <br />
+          Spammers use unprotected site registration forms in an attempt to use another's
+          website to post and broadcast their own advertising. To combat this malicious
+          technique, if CAPTCHA is enabled in the Site Settings, a simple challenge
+          question is asked that visitor must answer correctly in order to submit the
+          Registration Entrance Page.<br />
+          <br />
+          <span style="font-weight: bold;">Registration Confirmation *:</span> This Page
+          will be displayed automatically when a Visitor successfully registers on the
+          website. It will then direct the Registered User to their previously requested
+          Page or File. This Page will also be emailed to the Registration E-mail Address
+          in the Site Settings so that someone on your staff can be alerted about the
+          registration.<br />
+          <br />
+          <br />
+
+          <h3>Membership</h3><br />
+          <span style="font-weight: bold;">Membership Entrance *:</span>&nbsp;This Page
+          will be displayed automatically when a Visitor attempts to access a Page or
+          File in a Membership Folder.<br />
+          <br />
+          <span style="font-weight: bold;">Membership Confirmation *:</span>&nbsp;This
+          Page will be displayed automatically when a Visitor successfully registers as a
+          Member on the website. It will then direct the Member User to their previously
+          requested Page or File. This Page will also be emailed to the Membership E-mail
+          Address in the Site Settings so that someone on your staff can be alerted about
+          the new Member.<br />
+          <br />
+          <br />
+
+          <h3>My Account</h3><br />
+          <span style="font-weight: bold;">My Account *:</span> This Page displays the
+          User's Personal Contact Information and links to the other account pages: My
+          Account Profile, Email Preferences, View Orders, and Change Password. If any
+          commerce features have been used, any Saved Carts, Order History, and Shipping
+          Address Book is displayed. If they are an Affiliate, then their Affiliate
+          commissions will be displayed. If they are a Member, then their Member ID and
+          Expiration Date will be displayed.<br />
+          <br />
+          <span style="font-weight: bold;">My Account Profile *:</span> This Page allows
+          the User to update their personal contact &amp; billing Information, and change
+          their account password.<br />
+          <br />
+          <span style="font-weight: bold;">E-Mail Preferences *:</span> This Page allows
+          the User (or Subscriber) to update their e-mail address, and any e-mail
+          subscriptions they have access to receive.<br />
+          <br />
+          <span style="font-weight: bold;">View Order *:</span> This Page displays a
+          previously submitted Order, and offers the User the opportunity to reorder
+          (fill their Cart with it's items).<br />
+          <br />
+          <span style="font-weight: bold;">Update Address Book *:</span> This Page allows
+          the User to update the shipping addresses captured during previous checkout
+          sessions.<br />
+          <br />
+          <br />
+
+          <h3>Forms</h3><br />
+          <a href="0130_custom_form.html" onclick=
+          "update_help_content('0130_custom_form'); return false;" style=
+          "font-weight: bold;">Custom Form</a><span style="font-weight: bold;">:</span>
+          This Page will allow you to create your own custom form to collect data from
+          site Visitors.<br />
+          <br />
+          <a href="0160_custom_form_confirmation.html" onclick=
+          "update_help_content('0160_custom_form_confirmation'); return false;" style=
+          "font-weight: bold;">Custom Form Confirmation</a><span style=
+          "font-weight: bold;">:</span> This Page provides a way to display a newly
+          submitted form's data to the Submitter as a receipt confirmation, along with a
+          time and date stamp and a unique reference code.<br />
+          <br />
+          <a href="0190_form_list_view.html" onclick=
+          "update_help_content('0190_form_list_view'); return false;" style=
+          "font-weight: bold;">Form List View</a><span style=
+          "font-weight: bold;">:</span> This Page displays filtered rows of submitted
+          form data collected from a Custom Form. It can optionally link each row to a
+          Form Item View.<br />
+          <br />
+          <a href="0170_form_item_view.html" onclick=
+          "update_help_content('0170_form_item_view'); return false;" style=
+          "font-weight: bold;">Form Item View</a><span style=
+          "font-weight: bold;">:</span>&nbsp;This Page displays a a single submitted form
+          and must be linked to from a Form List View.<br />
+          <br />
+          <a href="0205_form_view_directory.html" onclick=
+          "update_help_content('0205_form_view_directory'); return false;" style=
+          "font-weight: bold;">Form View Directory</a><span style=
+          "font-weight: bold;">:</span>&nbsp;This Page allows you to see information
+          about multiple Form List Views on one Page (e.g. most recent, most viewed, most
+          active, number of comments, number of views).<br />
+          <br />
+          <br />
+
+          <h3>Calendars</h3><br />
+          <a href="0110_calendar_view.html" onclick=
+          "update_help_content('0110_calendar_view'); return false;" style=
+          "font-weight: bold;">Calendar View</a><span style="font-weight: bold;">:</span>
+          This Page displays one or more calendars. It can optionally link it's Events to
+          a Calendar Event View.<br />
+          <br />
+          <a href="0120_calendar_event_view.html" onclick=
+          "update_help_content('0120_calendar_event_view'); return false;" style=
+          "font-weight: bold;">Calendar Event View</a><span style=
+          "font-weight: bold;">:</span> This Page displays the details of a Calendar
+          Event and must be linked to from a Calendar View.<br />
+          <br />
+          <br />
+
+          <h3>E-Commerce</h3><br />
+          <a href="0210_catalog.html" onclick=
+          "update_help_content('0210_catalog'); return false;" style=
+          "font-weight: bold;">Catalog</a><span style="font-weight: bold;">:</span> This
+          Page displays thumbnails of product categories and allows Visitors to "drill
+          down" into unlimited Product Groups, without leaving the Page.<br />
+          <br />
+          <a href="0220_catalog_detail.html" onclick=
+          "update_help_content('0220_catalog_detail'); return false;" style=
+          "font-weight: bold;">Catalog Detail</a><span style=
+          "font-weight: bold;">:</span> This Page displays photos, information, pricing,
+          and the "add to order/cart" features for any Product referenced by a Catalog
+          Page.<br />
+          <br />
+          <a href="0230_express_order.html" onclick=
+          "update_help_content('0230_express_order'); return false;" style=
+          "font-weight: bold;">Express Order</a><span style="font-weight: bold;">:</span>
+          This Page combines the functionality of the traditional checkout process
+          (Shopping Cart Page &gt; Billing Information Page &gt;&nbsp;Order Preview Page)
+          into a single Page, so you can offer fast, one-step checkouts.<br />
+          <br />
+          <a href="0240_order_form.html" onclick=
+          "update_help_content('0240_order_form'); return false;" style=
+          "font-weight: bold;">Order Form</a><span style="font-weight: bold;">:</span>
+          This Page displays a group of Products in a few different ways and the "add to
+          order/cart" features.<br />
+          <br />
+          <a href="0250_shopping_cart.html" onclick=
+          "update_help_content('0250_shopping_cart'); return false;" style=
+          "font-weight: bold;">Shopping Cart</a><span style="font-weight: bold;">:</span>
+          This Page displays all the Products and recipients in their Cart, calculates
+          any discounts, displays subtotals, and allows the Customer to update their
+          items,&nbsp;enter an offer code, or checkout.<br />
+          <br />
+          <a href="0260_shipping_address_and_arrival.html" onclick=
+          "update_help_content('0260_shipping_address_and_arrival'); return false;"
+          style="font-weight: bold;">Shipping Address &amp; Arrival</a><span style=
+          "font-weight: bold;">:</span> This Page collects shipping addresses and
+          optional arrival dates for each recipient.<br />
+          <br />
+          <a href="0270_shipping_method.html" onclick=
+          "update_help_content('0270_shipping_method'); return false;" style=
+          "font-weight: bold;">Shipping Method</a><span style=
+          "font-weight: bold;">:</span> This Page displays the available shipping options
+          and their fees to the Customer for each recipient.<br />
+          <br />
+          <a href="0280_billing_information.html" onclick=
+          "update_help_content('0280_billing_information'); return false;" style=
+          "font-weight: bold;">Billing Information</a><span style=
+          "font-weight: bold;">:</span> This Page collects the Customer's billing
+          information for the Order.<br />
+          <br />
+          <a href="0290_order_preview.html" onclick=
+          "update_help_content('0290_order_preview'); return false;" style=
+          "font-weight: bold;">Order Preview</a><span style="font-weight: bold;">:</span>
+          This Page displays the order details and totals, and collects the payment
+          method from the Customer. &nbsp;It also provides the "purchase" button to
+          finalize and complete the Order.<br />
+          <br />
+          <a href="0295_order_receipt.html" onclick=
+          "update_help_content('0295_order_receipt'); return false;" style=
+          "font-weight: bold;">Order Receipt</a><span style="font-weight: bold;">:</span>
+          This Page displays the successful acceptance of the Order, and shows all the
+          Order details,&nbsp;time and date stamp, and the unique order number.
+          &nbsp;This Page can be e-mailed to the Customer and optionally to any other
+          person on your staff.<br />
+          <br />
+          <br />
+
+          <h3>Affiliate Program</h3><br />
+          <a href="0300_affiliate_signup_form.html" onclick=
+          "update_help_content('0300_affiliate_signup_form'); return false;" style=
+          "font-weight: bold;">Affiliate Sign Up Form</a> <span style=
+          "font-weight: bold;">*:</span> This Page collects all necessary information to
+          process an Affiliate sales representative for your website.<br />
+          <br />
+          <span style="font-weight: bold;">Affiliate Sign Up Confirmation *:</span> This
+          Page is displayed when the Affiliate Sign Up Form is submitted and provides a
+          receipt confirmation for the Affiliate.<br />
+          <br />
+          <span style="font-weight: bold;">Affiliate Welcome *:</span> This Page will be
+          e-mailed automatically to the Affiliate once they have been approved. It
+          contains a self-generated tracking code that will track all on-line sales and
+          commissions for the Affiliate.<br />
+          <br />
+          NOTE: Changing a Page Type after the Page has been
+          created&nbsp;is&nbsp;non-distructive, meaning&nbsp;you will not lose any data
+          if you change the Page Type,&nbsp;and you can always change the Page Type back
+          without any problems.
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Site Search Feature</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Include in Site Search:</td>
+
+        <td>Select this option to include this Page in the Search Results Page when the
+        built-in Site Search feature is used.<br />
+        <br />
+        Site Search is smart. Only search results from Pages that the searcher has access
+        to view will be displayed in the results, so it is safe to enable this feature
+        for Membership and Private Pages.</td>
+      </tr>
+
+      <tr>
+        <td>Promote on Keyword:</td>
+
+        <td>Select this option to promote this Page to the top of the Search Results
+        Page.<br />
+        <br />
+        TIP: This is a good way to create site keywords that your Visitors can recall
+        from your promotional materials and quickly find a Page on your site.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Home Page Feature</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home Page:</td>
+
+        <td>Checking this box will make this Page rotate randomly with any other Page
+        marked as a "Home Page" whenever a visitor enters the top level of your domain
+        name (<a href="http://www.mydomain.com%29./">http://www.mydomain.com).</a></td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Search Engine Optimization</h3>These properties help search engines (e.g.
+          Google, Bing, Yahoo!) crawl your website and promote your Pages in their
+          results. This leads to more traffic to your Website.<br />
+          <br />
+          The Title, Description, and Keywords fields add text to the Visitor's browser
+          title bar and search engine meta tags to the Page when it is displayed.<br />
+
+          <p>The Title and Description fields are also used by the Site Search feature
+          and displayed on Search Results Page.</p>The Title is used as the e-mail
+          Subject field when the auto-responder feature is used to send the Page after an
+          action has occurred.
+        </td>
+      </tr>
+
+      <tr>
+        <td>Web Browser Title:</td>
+
+        <td>Page Title. This is what is displayed at the top of the Visitor's browser
+        window when they access this Page.<br />
+        <br />
+        NOTE: If you leave this field blank, the website defaults found in Site Settings
+        will be used.</td>
+      </tr>
+
+      <tr>
+        <td>Web Browser Description:</td>
+
+        <td>This is the short description of the Page. This is what you typically see in
+        the Search Engine results on the major search engines.<br />
+        <br />
+        NOTE: If you leave this field blank, the website defaults found in Site Settings
+        will be used.</td>
+      </tr>
+
+      <tr>
+        <td>Web Browser Keywords:</td>
+
+        <td>Enter the keywords that will be found in the content of this Page. The search
+        engines will attempt to match these keywords with their visitor's searches.
+        Separate each keyword with a comma.<br />
+        <br />
+        If you leave this field blank, the website defaults found in Site Settings will
+        be used.<br />
+        <br />
+        NOTE: If "Include in Site Search" is enabled, then these keywords will be added
+        to all relevant Tag Clouds, and these keywords will be searched along with the
+        Page Region content of this Page in the Site Search.</td>
+      </tr>
+
+      <tr>
+        <td>Include in sitemap.xml:</td>
+
+        <td>
+          Select this option in order to include this Page in the sitemap.xml file. The
+          sitemap.xml file is used in order to tell search engines about content at your
+          website so that Visitors can find your website.<br />
+          <br />
+          The Pages's Folder must have a Public Access Control Type and not be archived
+          in order for the Page to appear in the sitemap.xml file. Also the Page must
+          have one of the following Page Types: Standard, Folder View, Photo Gallery,
+          Search Results, Custom Form, Form List View, Form Item View, Form View
+          Directory, Calendar View, Calendar Event View, Catalog, Catalog Detail, Express
+          Order, Order Form, or Shopping Cart.<br />
+          <br />
+          This feature offers the following advantages.<br />
+
+          <ul>
+            <li>This system will automatically notify all major search engines (i.e.
+            Google, Bing/Yahoo!, Ask.com) daily if the sitemap.xml file has changed. This
+            means that Visitors from search engines will find new content at your website
+            sooner. This also means that you do not have to manually submit your website
+            to search engines or wait for other sites to link to your website in order
+            for search engines to find it.</li>
+
+            <li>Sometimes search engines are not able to find all URL's at a website.
+            This might be because content is linked in JavaScript or Flash or there might
+            be an area of content that is not linked on the website. The sitemap.xml file
+            ensures that search engines know about every URL at your website.</li>
+
+            <li>The sitemap.xml file contains information about when an item was last
+            modified so search engines don't have to crawl URL's that have not changed,
+            so this saves bandwidth and improves site performance.</li>
+
+            <li>The sitemap.xml file contains priority information in order to give the
+            home page(s) the highest priority. This means that search engines can make
+            sure to crawl your home page first in case they are too busy to crawl your
+            whole website at the moment.</li>
+
+            <li>For Catalog, Form List View, and Calendar View Pages, all items that
+            appear through those Pages will also be included in the sitemap.xml file. For
+            example, if a Product appears on a Catalog Page, then a URL to the Catalog
+            Detail Page for that Product will be included in the sitemap.xml file. This
+            means that search engines will be able to find all items that appear on your
+            website (i.e. Product Groups, Products, Submitted Forms, Calendar
+            Events).</li>
+
+            <li>This system has a robots.txt file which tells search engines where the
+            sitemap.xml file is located in order to make sure that all search engines can
+            find the sitemap.xml file.</li>
+          </ul>
+
+          <p>NOTES:</p>
+
+          <ul>
+            <li>The sitemap.xml file should include every Page at your website that you
+            want search engines to know about, not just the most important Pages.
+            Normally, all public Pages should be included. However, if you happen to have
+            public Pages that you only want to share with a few people, then do not
+            include those Pages.</li>
+
+            <li>Search engines are only notified if there is at least one Page included
+            in the sitemap.xml file, in case you do not want search engines to know about
+            your website.</li>
+
+            <li>Files are not currently included in the sitemap.xml file (only
+            Pages).</li>
+
+            <li>The sitemap.xml file may be accessed at the following location:<br />
+            <br />
+            http://www.example.com/sitemap.xml</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Comments Feature</h3>
+
+          <p>The Comments feature adds online community-building functionality to any
+          Page on your site. Comments allow Visitors and Users to interact with your
+          site. If Comments are enabled for a Page, then anyone who can view a Page can
+          leave a Comment (and therefore become a Contributor), and read any published
+          Comments from other Contributors. Comments can be automatically published, or
+          the Page's Moderator (a User with edit rights to the Page), can be alerted via
+          e-mail to new Comments with a link to instantly edit, delete or publish the
+          Comment.</p>
+
+          <p>NOTE: Comments are tied directly to a Page. However, some Pages, depending
+          on their Page Type, display dynamic items, so their Comments are tied to both
+          the Page and the dynamic item. This is transparent to the Visitors, but worth
+          mentioning as you are deciding which Pages you should enable Comments for.
+          Pages with the following Page Types display dynamic items: Catalog, Catalog
+          Detail, Form Item View, and Calendar Event View.</p>
+
+          <p>NOTE: If CAPTCHA is enabled in the Site Settings and if a visitor is not
+          logged in and the Page has either a Public or Guest Access Control Type, then a
+          Captcha field will automatically be displayed in the Add Comment area of the
+          Page. The Captcha field is a randomly generated question that must be answered
+          before the Comment can be added. This is to protect the Comments feature from
+          being spammed.</p>
+
+          <p>IMPORTANT: To display comments, a System Region or
+          &lt;system&gt;&lt;/system&gt; tag must appear in the Page Style assigned to the
+          Page. The Site Designer can add this tag if necessary.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Enable Comments:</td>
+
+        <td>Selecting this box will allow Contributors to add Comments to the Page.
+        Comments are disabled by default.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Allow New Comments:</td>
+
+        <td>Check this box to allow Visitors to add new comments. When the box is
+        unchecked, the add Comment form and Watcher area no longer appear, however the
+        list of Comments is still shown.<br />
+        <br />
+        An "Allow New Comments" or "Do Not Allow New Comments" button is also displayed
+        near the add Comment form, which allows you to control this same setting. If this
+        is a Page that displays dynamic items (e.g. Form Item View), then the Allow/Do
+        Not Allow new Comments button only applies to the current dynamic item that you
+        are viewing. For example, when using this feature on a Form Item View you are
+        only allowing or not allowing new Comments for that specific Submitted Form. For
+        Pages that show dynamic items, this checkbox will only be used as the default
+        setting for all dynamic items.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Do Not Allow New Comments Message:</td>
+
+        <td>This is the message that will appear to Visitors if new Comments are no
+        longer allowed. You may leave this field blank if you do not want a message to
+        appear.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Automatically Publish Comments:</td>
+
+        <td>Check this box to automatically publish Comments instantly as soon as they
+        are added by Contributors. Leave this box unselected if you would like the
+        Comment to be unpublished until the Moderator has approved it.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Allow User to Select Name:</td>
+
+        <td>Check this box to allow Users to select the name that they want to appear
+        next to "Added by". This feature encourages more participation from your user
+        community by giving them a choice as to how their identity appears to all. If
+        this check box is checked then the User may select from: 1) username, 2) first
+        name, 3) first name, last initial, 4) first initial, last name, 5) first initial,
+        last initial, 6) full name, or 7) Anonymous. If this setting is unchecked, then
+        the username will always be displayed next to the comment.<br />
+        <br />
+        This setting does not apply to Visitors who are not logged in and does not apply
+        to Users who have edit rights to this Page. These types of Visitors and Users are
+        allowed to enter a name or remain anonymous.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Require Login to Comment:</td>
+
+        <td>Check this box to require that Visitors login or register before they add a
+        Comment.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Allow File Attachments:</td>
+
+        <td>Check this box to allow Visitors to upload Attachments when adding Comments.
+        For example, a Visitor might want to upload a picture or a PDF with a Comment in
+        order to share more information. When a Comment has been added with an
+        Attachment, then the Attachment will appear as a link below the Comment, along
+        with the file size. An Attachment will be deleted automatically when its Comment
+        or its Comment's Page is deleted. Attachments can be found easily via My
+        Attachments in the Files tab.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Show Submitted Date &amp; Time:</td>
+
+        <td>Check this box to show the date &amp; time that a Comment was added next to
+        each Comment (e.g. Saturday, January 1, 2011 at 12:00 AM).<br />
+        <br />
+        TIP: If you are using Comments for Product reviews then you might want to uncheck
+        this box because the reviews might appear dated over time.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">E-mail moderator when a comment is added:</td>
+
+        <td>Select this box to send an e-mail notification to the Page's Moderator
+        (below). The Moderator will then be able to edit, delete, or publish the
+        Comment.<br />
+        <br />
+        NOTE: Moderators must have edit rights to the Page. Also, the Moderator will not
+        receive an e-mail notice if the Comment is submitted by an Administrator,
+        Designer, or Manager User (since these Users can approve their own comments so a
+        Moderator is unnecessary).</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">To E-mail Address:</td>
+
+        <td>Enter a valid e-mail address for the Moderator that will manage the Comments
+        for this Page.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">Subject:</td>
+
+        <td>
+          This is the subject line of the e-mail. A default subject will be used if the
+          subject is blank.<br />
+          <br />
+          TIP: For Custom Form Pages and Form Item View Pages, you may also include the
+          name of any custom field in the associated Custom Form to create a dynamic
+          subject that contains submitted form data. Example: You received a message from
+          <em>^^name^^</em>. You can also use the following format to include different
+          content depending on whether there is a value for a custom form field or not:
+
+          <p>[[His name is ^^<span style="font-style: italic;">name</span>^^||He did not
+          include his name.]]</p>
+
+          <p>You can use the following format to customize the date format for date and
+          date &amp; time fields. The format must be a <a href=
+          "http://php.net/manual/en/function.date.php" target="_blank">PHP date
+          format</a>.</p>
+
+          <p>Format:<br />
+          ^^field_name^^%%format%%</p>
+
+          <p>Example:<br />
+          ^^submitted_date_and_time^^%%l, F j, Y \a\t g:i A%%</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">Also send e-mail to custom form conditional
+        administrators:</td>
+
+        <td>
+          <p><em>This feature only applies to Form Item View Pages.</em> Check this box
+          if you want to use the same conditional e-mail notification of administrators
+          to occur that were notified initially when this Page's Custom Form was
+          submitted. Since some Custom Form fields can notify different administrators
+          (or conditiional administrators), you may want the same adminitrators notified
+          when new Comments are added.</p>
+
+          <p>TIP: This feature is useful when you want to set up a single Custom Form to
+          manage requests for several internal groups. Each time a Comment (i.e.
+          response) is added to the Custom Form Item View Page, only the proper group
+          selected in original Submitted Form would be notified.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">E-mail custom form submitter when a comment is
+        published:</td>
+
+        <td>
+          <p><em>This feature only applies to Form Item View Pages.</em> Whenever a
+          Comment is published this will send the original Custom Form submitter a
+          notification e-mail informing him/her that a new Comment has been published to
+          his/her Submitted Form. In order for this feature to work, there must be a
+          field on the Custom Form where the Connect to Contact property is set to E-mail
+          Address. That allows this feature to figure out the Custom Form submitter's
+          e-mail address.</p>
+
+          <p>TIP: This feature is useful for a support ticket system where the person who
+          originally submitted the ticket (i.e. submitted form) needs to be notified when
+          someone replies to their ticket (i.e. adds a Comment).</p>
+
+          <p>NOTE: The "From" address for this e-mail notification will be set to the
+          From E-mail Address page type property for the Custom Form. If that field has
+          no value, then the Support E-mail Address from the Site Settings will be
+          used.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">Page:</td>
+
+        <td>This is the page that will be sent to the Custom Form Submitter.<br />
+        <br />
+        NOTE: This feature requires that a System Region or a
+        &lt;system&gt;<em>Page</em>&lt;/system&gt; tag appear in the Page Style for the
+        selected Page. The Site Designer can add the tag if necessary.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">Subject:</td>
+
+        <td>
+          This is the subject line of the e-mail.<br />
+          <br />
+          TIP: You may also include the name of any custom field in the associated Custom
+          Form to create a dynamic subject that contains submitted form data. Example:
+          You received a message from <em>^^name^^</em>. You can also use the following
+          format to include different content depending on whether there is a value for a
+          custom form field or not:
+
+          <p>[[His name is ^^<span style="font-style: italic;">name</span>^^||He did not
+          include his name.]]</p>
+
+          <p>You can use the following format to customize the date format for date and
+          date &amp; time fields. The format must be a <a href=
+          "http://php.net/manual/en/function.date.php" target="_blank">PHP date
+          format</a>.</p>
+
+          <p>Format:<br />
+          ^^field_name^^%%format%%</p>
+
+          <p>Example:<br />
+          ^^submitted_date_and_time^^%%l, F j, Y \a\t g:i A%%</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">E-mail watchers when a comment is published:</td>
+
+        <td>
+          <p>When a Page is selected (below), Users will be allowed to add themselves to
+          the Watcher List for this Page, so that they will be notified via e-mail when a
+          Comment is published. This feature allows Watchers to easily track
+          conversations for certain submitted forms. A Visitor must be logged in as a
+          User in order to add or remove themselves from the Watch List (through a Form
+          Item View Page).</p>
+
+          <p>NOTE: The "From" address for this e-mail notification will be set to the
+          Support E-mail Address from the Site Settings.</p>
+
+          <p>If this Page is a Form Item View and there is a Form Editor for the
+          Submitted Form, then the Form Editor will be included in the list of Watchers,
+          because he/she will receive the moderator e-mail when a Comment is added. Only
+          Users with edit access to this Page and the Form Editor him/herself will be
+          able to see the Form Editor in the Watcher list. You cannot remove the Form
+          Editor from the Watcher list in the same way that you remove standard Watchers.
+          If you need to remove the Form Editor, then you will need to edit the Submitted
+          Form.</p>
+
+          <p>If this Page is a Form Item View and it is set to notify the Custom Form
+          submitter, then the Custom Form submitter will be included in the list of
+          Watchers. Only Users with access to manage Watchers on this Page will be able
+          to see the Custom Form submitter in the Watcher List. This includes Users with
+          edit access to this Page, the Form Editor (if one exists), and the Custom Form
+          submitter him/herself (if "allow submitter to manage watchers" is checked). You
+          cannot remove the Custom Form submitter from the Watcher list.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">Page:</td>
+
+        <td>This is the page that will be sent to the Watchers.<br />
+        <br />
+        NOTE: This feature requires that a System Region or a
+        &lt;system&gt;<em>Page</em>&lt;/system&gt; tag appear in the Page Style for the
+        selected Page. The Site Designer can add the tag if necessary.</td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">Subject:</td>
+
+        <td>
+          This is the subject line of the e-mail.<br />
+          <br />
+          TIP: For Form Item View Pages, you may also include the name of any custom
+          field in the associated Custom Form to create a dynamic subject that contains
+          submitted form data. Example: <em>^^subject^^</em>: A comment has been added.
+          You can also use the following format to include different content depending on
+          whether there is a value for a custom form field or not:
+
+          <p>[[Subject is ^^<span style="font-style: italic;">subject</span>^^||There is
+          no subject]]</p>
+
+          <p>You can use the following format to customize the date format for date and
+          date &amp; time fields. The format must be a <a href=
+          "http://php.net/manual/en/function.date.php" target="_blank">PHP date
+          format</a>.</p>
+
+          <p>Format:<br />
+          ^^field_name^^%%format%%</p>
+
+          <p>Example:<br />
+          ^^submitted_date_and_time^^%%l, F j, Y \a\t g:i A%%</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">Allow submitter to manage watchers:</td>
+
+        <td>Check this box to allow each custom form Submitter to add/remove Watchers
+        from their submitted forms (through a Form Item View Page).<br />
+        <br />
+        NOTE: This feature is only enabled if "E-mail watchers when a comment is
+        published:" is also enabled (see above).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <h2>Deleting a Page</h2>
+
+  <p>When a Page is deleted, a warning message is displayed, and if "Continue" is
+  selected,&nbsp;the Page, its Page Region content, and all of its Comments will be
+  deleted from the system's database.</p>
+
+  <p>TIP: If you might want to archive the Page Region content, we recommend that you
+  place the Page in a Private Folder (so no one can view or edit it) instead of deleting
+  it.</p>
+
+  <p>NOTE: When a Page is deleted, only the Page Regions and Comments are deleted. Any
+  Common Regions, Page Style, Page Type, etc., are NOT deleted.&nbsp; The Page, its Page
+  Regions, and its Comments are gone!</p>
+
+  <p>NOTE: The delete button only appears for Users that have access to delete Pages.</p>
+
+  <p>WARNING: Be careful because there is no undelete!&nbsp;</p>
+</body>
+</html>

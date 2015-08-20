@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Catalog Page Type</h1>
+
+  <p>The Catalog Page Type is designed to allow your Customers to browse and search your
+  online catalogs of Products and Product Groups, from a single Page.</p>
+
+  <p>Here are the Page Type Properties available to this Page Type:</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Product Group:</p>
+        </td>
+
+        <td>The Catalog Page will start with this Product Group as the parent when the
+        Page is first displayed. &nbsp;Leave this field unselected if you want to start
+        with the top-most Product Group of the website as the parent when the Page is
+        first displayed.</td>
+      </tr>
+
+      <tr>
+        <td>Enable Menu:</td>
+
+        <td>Select this if you want a menu to appear on the Catalog page that allows
+        Customers to quickly browse to a Product Group. All Product Groups, starting with
+        the Product Group that was selected above, where the Display Type is "Display
+        contents for browsing on catalog page" will be included in the menu. Products are
+        not included in the menu.</td>
+      </tr>
+
+      <tr>
+        <td>Enable Search:</td>
+
+        <td>
+          <p>Select this if you want a search field to appear on the Catalog page that
+          allows Customers to quickly find Product Groups and Products. The search
+          feature will only search for items under the Product Group that was selected
+          above. Also, it will only search for items that appear on Catalog Detail pages
+          (i.e. Product Groups where the Display Type is "Display contents for selection
+          on catalog detail page" and Products).</p>
+
+          <p>The following fields for Product Groups and Products are searched.</p>
+
+          <ul>
+            <li>Search Keywords</li>
+
+            <li>Name/ID/SKU</li>
+
+            <li>Short Description</li>
+
+            <li>Full Description</li>
+
+            <li>Details</li>
+
+            <li>Web Browser Keywords</li>
+          </ul>
+
+          <p>The fields above are listed in order of importance in determining search
+          relevance, from most important to least important. For example, if the search
+          feature finds a match in Search Keywords for Product A and a match in Details
+          for Product B, then Product A will appear in the search results before Product
+          B, because Search Keywords is more important than Details. In order to generate
+          a match, the keywords that the Customer enters only have to match part of the
+          data in a field, so, for example, if a Customer searches for "shirt" and a
+          Product contains "t-shirt" for Search Keywords, then that will result in a
+          match.</p>
+
+          <p>TIP: If you want to improve the quality of the search results for your
+          Customers we recommend that you add Search Keywords to your Product Groups and
+          Products that match the types of keywords that your Customers might enter to
+          find a Product.</p>
+
+          <p>If the search feature finds a match for a Product that is in a Product
+          Group, where the Display Type is "Display contents for selection on catalog
+          detail page", then the Product Group will appear in the search results instead
+          of the Product.</p>
+
+          <p>If a Product Group or Product has Search Keywords, then the keywords will be
+          displayed on the Catalog Detail Page with links to search results for each
+          keyword, even if search is disabled for the Catalog Page. If you want to fully
+          disable search then you should uncheck this check box and remove search
+          keywords from Product Groups and Products.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Number of Featured Items:</td>
+
+        <td>Specify the maximum number of featured Product Groups and Products to
+        display. You may set the value to 0 to disable this feature. Featured items are
+        set on the Edit Featured &amp; New Items screen in the Commerce tab.</td>
+      </tr>
+
+      <tr>
+        <td>Number of New Items:</td>
+
+        <td>Specify the maximum number of new Product Groups and Products to display. You
+        may set the value to 0 to disable this feature. New items are set on the Edit
+        Featured &amp; New Items screen in the Commerce tab.</td>
+      </tr>
+
+      <tr>
+        <td>Number of Columns:</td>
+
+        <td>Specify the number of columns to display the children Products &amp; Product
+        Groups found within the parent Product Group.</td>
+      </tr>
+
+      <tr>
+        <td>Image Width:</td>
+
+        <td>Specify the width that each thumbnail image generated for each Product
+        &amp;&nbsp;Product Group displayed.<br />
+        <br />
+        TIP: For the best thumbnail rendering, make the Image Width evenly divisible by 2
+        in relation to the original Product &amp; Product Group images.</td>
+      </tr>
+
+      <tr>
+        <td>Image Height:</td>
+
+        <td>Specify the height that each thumbnail image generated for each Product
+        &amp;&nbsp;Product Group displayed.<br />
+        <br />
+        TIP: For the best thumbnail rendering, make the Image Height evenly divisible by
+        2 in relation to the original Product &amp; Product Group images.</td>
+      </tr>
+
+      <tr>
+        <td>Back Button Label:</td>
+
+        <td>Specify the text that will be displayed to the "Back" button on the
+        Page.</td>
+      </tr>
+
+      <tr>
+        <td>Catalog Detail Page:</td>
+
+        <td>Sometimes browsing a Catalog is all you need your Customers to do.
+        &nbsp;However, if you want to allow your Customers to also purchase online, you
+        will need to connect your Catalog Page to a Catalog Detail Page. &nbsp;This will
+        allow them to reach the Add to Cart features.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <h2>Setting up a Catalog</h2>
+
+  <p>The Catalog Page is a powerful feature that lets your Customers browse and search an
+  unlimited number Product Groups&nbsp; and Products.&nbsp;All the display and navigation
+  is built-in, so you don't have to create a Page for each and every Product and Product
+  Group. Instead, a single Catalog Page can list and navigate through an unlimited number
+  of Product Groups and Products.</p>
+
+  <p><span style="font-weight: bold;">Browsing a Catalog:</span> When you create a
+  Catalog Page, you specify the starting, or parent Product Group. &nbsp;Product Groups
+  for Products are like Folders are to Pages. &nbsp;You can place children Product Groups
+  and Products into a parent Product Group. This relationship is used by the Catalog Page
+  to first display the parent Product Group and then allow the Customer to drill down
+  into it's children Product Groups and Products.&nbsp;If you want to change the way a
+  Catalog Page navigates or the Products it displays, simply move the Products and
+  Product Groups around. <span style="font-style: italic;">You must have Commerce Manager
+  rights to do this.</span></p>
+
+  <p><span style="font-weight: bold;">Buying from a Catalog</span>: When you create a
+  Catalog Page, you can optionally specify a Catalog Detail Page. &nbsp;If you do this,
+  the Customer will be able to not only browse the Catalog, but also add any Products in
+  the Catalog to their Cart.</p>
+
+  <p>TIP: Since the logic that drives the browsing/buying is defined within each Catalog
+  Page, you can create unlimited Catalog Pages,&nbsp;each with different features.
+  &nbsp;If you then put these Pages into access-controlled Folders, you can create
+  catalogs for different audiences. &nbsp;For example, a catalog for public shopping, and
+  a private catalog for members or resellers only, and even a catalog unique to a
+  specialized customer.</p>
+
+  <p>TIP: You can also use a Catalog Page to create a dynamically changing catalog of
+  media! To do this, simply create a Product for each media item, set it's Price to
+  "0.00", and set it's Selection Type to "Donation". This will surpress the ecommerce
+  features for the Page.</p>
+
+  <p><a href="0090_edit_page_properties.html" onclick=
+  "update_help_content('0090_edit_page_properties'); return false;" style=
+  "font-weight: bold;">Back to Edit Page Properties</a></p>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Create / Edit Custom Page Style</h1>
+
+  <p>This screen displays a Page Style and it's properties.</p>
+
+  <p>Page Styles are created and modified by your Web Designer because it requires HTML
+  programming experience.</p>
+
+  <p>Page Style can include any valid HTML code, so you can include Flash, DHTML,
+  Javascript, images, CSS Style Sheets, and any other typical HTML web page elements.</p>
+
+  <p>Page Styles can be created using any popular web authoring tool such as Dreamweaver,
+  GoLive, Coda, Coffee Cup, or any other web authoring tool or text editor that you
+  prefer.</p>
+
+  <h2>Code Editor</h2>
+
+  <p>The Code Editor colorizes your code and adds line numbers to make it easier to read
+  and debug. The Code Editor may take a while to "read" through your code and colorize
+  it. This process is particularly slow on Internet Explorer browsers. We recommend the
+  Firefox browser for faster editing throughout the website. It is free to download, and
+  works on most desktop computers.</p>
+
+  <h2>Page Style Properties</h2>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Page Style Name</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Name:</td>
+
+        <td>Name of this Page Style.<br />
+        <br />
+        It will be displayed in the Page Style selection field when editing a Page's
+        Properties or a Folder's Properties. For security reasons, it is only visible to
+        Site Managers.</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Social Networking Position:</p>
+        </td>
+
+        <td>
+          <p>Select the position around the Primary System Region ("Use Page") where you
+          would like the Social Networking features to appear. You can also select
+          "Disable" to hide the display of the Social Networking features for this Page
+          Style.</p>
+
+          <p>NOTE: The Social Networking features are enabled and configured in the Site
+          Settings.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>HTML Page with embedded the system Tags</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Add HTML Code &amp; Tags:</td>
+
+        <td>Add a full and valid &lt;HTML&gt;page&lt;/HTML&gt; here.<br />
+        <br />
+        NOTE: See below for an explanation of all the available Tags and how to use
+        them.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <h2>Adding Tags to your HTML</h2>
+
+  <p>One of the most powerful features of the system lies in the fact that you only have
+  to add a handful of tags to your HTML page and you have done everything necessary to
+  build an entire searchable website, complete with "my account" login privileges,
+  membership management, e-commerce, custom forms, protected areas, calendars, photo
+  galleries, blogs, forums, ticketing systems, and on, and on.</p>
+
+  <p>Here is a typical HTML page showing only the tags for clarity and not all tags are
+  used:<br />
+  <br />
+  &lt;html&gt;<br />
+  &nbsp; &nbsp; &nbsp;&lt;head&gt;<br />
+  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&lt;title&gt;&lt;/title&gt;<br />
+  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&lt;meta_tags&gt;&lt;/meta_tags&gt;<br />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;stylesheet&gt;&lt;/stylesheet&gt;<br />
+  &nbsp; &nbsp; &nbsp;&lt;/head&gt;<br />
+  &nbsp; &nbsp; &nbsp;&lt;body&gt;<br />
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;menu&gt;<span style=
+  "font-style: italic;">main-menu</span>&lt;/menu&gt;<br />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;cregion&gt;<span style=
+  "font-style: italic;">site-banner</span>&lt;/cregion&gt;<br />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;pregion&gt;&lt;/pregion&gt;<br />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;system&gt;&lt;/system&gt;<br />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;pregion&gt;&lt;/pregion&gt;<br />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;cregion&gt;<span style=
+  "font-style: italic;">site-footer</span>&lt;/cregion&gt;<br />
+  &nbsp;&nbsp; &nbsp; &nbsp;&lt;/body&gt;<br />
+  &lt;/html&gt;<br />
+  <br />
+  That is all it takes to create an entire, full-featured, database-driven website!</p>
+
+  <h2>The Path Tag</h2>
+
+  <p>The <span style="font-family: monospace;">{path}</span> tag can be inserted anywhere
+  in your HTML and is replaced automatically with the absolute URL to the location where
+  your system software was installed. You should always use the <span style=
+  "font-family: monospace;">{path}</span> tag if you need to reference any uploaded files
+  within your HTML. This makes your links portable, so if you ever need to move the
+  software system to another directory within your web server, your hand-coded links will
+  still work.<br />
+  <br />
+  <strong>Let's look at a typical example.</strong></p>
+
+  <p>Say you want to link to a background image file (example.png) that you uploaded
+  through the Design Files within the Control Panel. However, you want to be sure that
+  the link is portable because your web server administrator originally installed the
+  system software into a temporary directory that looked something like this:
+  <span style="font-family: monospace;">http://192.168.0.1/~example/software</span> and
+  will need to move the system software to <span style=
+  "font-family: monospace;">http://www.example.com/software</span> once you have setup
+  your domain and are ready to launch the site.</p>
+
+  <p>So if you hard-code your link to example.png file like this:<br />
+  <br />
+  <span style=
+  "font-family: monospace;">http://192.168.0.1/~example/software/files/example.png</span>
+  or<br />
+  <span style="font-family: monospace;">/files/example.png</span><br />
+  <br />
+  Then when the system software is moved later to another directory, this link would no
+  longer work. So instead, be sure to link to the file using the <span style=
+  "font-family: monospace;">{path}</span> tag:<br />
+  <br />
+  <span style="font-family: monospace;">{path}files/example.png</span></p>
+
+  <p>The <span style="font-family: monospace;">{path}</span> tag is only necessary within
+  your custom HTML such as Custom Page Styles, Editable Head Content in System Page
+  Styles, Designer Regions, and within custom CSS files. The <span style=
+  "font-family: monospace;">{path}</span> tag is not necessary when adding links through
+  the Rich-text Editor. These links will be converted automatically for you when the
+  content region is saved.</p>
+
+  <p>NOTE: If you are the web server administrator and move the system to another
+  directory off of your webroot after installation, be sure to update your .htaccess file
+  per the system's installation / update instructions.</p>
+
+  <h2>The System Tags</h2>
+
+  <p>When you create a new Page Style, you'll notice that we already prefill your HTML
+  Code with a valid HTML page to get you started. &nbsp;Here is a listing of all the
+  system tags that you can embed within your Page Styles.</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <h3>&lt;head&gt;</h3>
+        </td>
+
+        <td><br />
+        These tags must be placed between the &lt;head&gt;&lt;/head&gt; tags in your Page
+        Style.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta_tags&gt;&lt;/meta_tags&gt;</td>
+
+        <td>This&nbsp;tag will be replaced with the &lt;meta&gt; tags and the contents of
+        the Page's Description and Keyword fields (or, if blank,&nbsp;the defaults in the
+        Site Settings).&nbsp;These are typically referred to as a "meta tags" and Search
+        Engines use this information to help classify Pages.<br />
+        <br />
+        NOTE:&nbsp;There should be no spaces or characters between the set of tags.&nbsp;
+        You can only define this tag ONCE in each Page Style.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;stylesheet&gt;&lt;/stylesheet&gt;</td>
+
+        <td>
+          <p>This&nbsp;tag will be replaced with a &lt;stylesheet&gt; statement and link
+          to a style sheet file (CSS). This tag is is ideal for Site Designers of
+          seasonal shopping sites to&nbsp;easily change the entire website look and feel
+          using a single CSS style sheet.</p>NOTE:&nbsp;There should be no spaces or
+          characters between the set of tags. You can only define this tag ONCE in each
+          Page Style.<br />
+          <br />
+          IMPORTANT: You must include this tag if you are using Themes, they rely on this
+          tag to be present in the Page Style to function.
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;title&gt;&lt;/title&gt;</td>
+
+        <td>This&nbsp;tag will be replaced with the content of the Page's Title field
+        (or, if blank,&nbsp;the default Title in the Site Settings). It will display in
+        the Visitor's browser window (title bar area). This is&nbsp;typically referred to
+        as a "meta tag" and Search Engines use this information to help classify
+        Pages.<br />
+        <br />
+        NOTE:&nbsp;There should be no spaces or characters between the set of tags.&nbsp;
+        You can only define this tag ONCE in each Page Style.</td>
+      </tr>
+
+      <tr>
+        <td>
+          <h3>&lt;/head&gt;</h3>
+        </td>
+
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><br />
+  <br />
+  <br /></p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <h3>&lt;body&gt;</h3>
+        </td>
+
+        <td><br />
+        These tags must be placed between the &lt;body&gt;&lt;/body&gt; tags in your Page
+        Style.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;ad&gt;<em>name</em>&lt;/ad&gt;</td>
+
+        <td>This&nbsp;tag will be replaced by the contents of any&nbsp;rotating Ads
+        assigned to the Ad Region&nbsp;called <em>name</em>.<br />
+        <br />
+        NOTE:&nbsp;There should only be the <span style="font-style: italic;">name</span>
+        and no spaces between the set of tags. You can define this tag as many times as
+        necessary within each Page Style. The&nbsp;<span style=
+        "font-style: italic;">name&nbsp;</span>must exist or this tag is ignored.<br />
+        <br />
+        TIP: We recommend that each &lt;ad&gt; tag should be contained within
+        a&nbsp;&lt;div&gt; tag&nbsp;that defines the Ad Region's absolute height and
+        width&nbsp;to restrict&nbsp;Ad content from compromising&nbsp;Page layout.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;cart&gt;&lt;/cart&gt;</td>
+
+        <td>This tag will be replaced with the number of items and the subtotal of any
+        active Shopping Cart present in the Visitor's current browser session. If there
+        are no items in the Visitor's Shopping Cart, then nothing will be outputted. The
+        number of items and subtotal will be linked to the last Shopping Cart or Express
+        Order Page that the Visitor visited, if one exists.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;cregion&gt;<em>name</em>&lt;/cregion&gt;</td>
+
+        <td>This&nbsp;tag will be replaced with the shared contents of the Common Region
+        or Designer Region called <em>name</em>.<br />
+        <br />
+        <span style="font-weight: bold;">Common Regions</span> should be reserved for
+        basic word processor content and can be edited from within any Page (that is
+        assigned the Page Style) using the Rich-text Editor by a Site Manager.<br />
+        <br />
+        <span style="font-weight: bold;">Designer Regions</span> should be reserved for
+        HTML and code snippets and are can be edited from within any Page (that is
+        assigned the Page Style)&nbsp;by a Site Designer.<br />
+        <br />
+        NOTE:&nbsp;There should only be the <span style="font-style: italic;">name</span>
+        and no spaces between the set of tags. You can define this tag as many times as
+        necessary within each Page Style. The&nbsp;<span style=
+        "font-style: italic;">name&nbsp;</span>must exist or this tag is
+        ignored.<br /></td>
+      </tr>
+
+      <tr>
+        <td>&lt;dregion&gt;<em>name</em>&lt;/dregion&gt;</td>
+
+        <td>This&nbsp;tag will be replaced by the contents of the shared Dynamic Region
+        called <em>name</em>.<br />
+        <br />
+        Dynamic Regions are reserved for PHP code,&nbsp;required integrating third-party
+        applications and databases into your website. &nbsp;<br />
+        <br />
+        Dynamic Regions can only be edited from within the [DESIGN] area by a Site
+        Designer.<br />
+        <br />
+        NOTE:&nbsp;There should only be the <span style="font-style: italic;">name</span>
+        and no spaces between the set of tags. You can define this tag as many times as
+        necessary within each Page Style. The&nbsp;<span style=
+        "font-style: italic;">name&nbsp;</span>must exist or this tag is ignored.<br />
+        <br />
+        IMPORTANT: For security reasons,&nbsp;this feature is disabled and requires
+        server authorization to enable. Please contact your Site Administrator for more
+        information.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;?php <em>code</em> ?&gt;</td>
+
+        <td>This tag, known as a PHP Region, will allow you to insert PHP code into the
+        Page Style. You can define this tag as many times as necessary within each Page
+        Style.<br />
+        <br />
+        IMPORTANT: For security reasons,&nbsp;this feature is disabled and requires
+        server authorization to enable. Please contact your Site Administrator for more
+        information.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;login&gt;<em>name</em>&lt;/login&gt;</td>
+
+        <td>This&nbsp;tag will be replaced with the Login Region called <em>name</em>.
+        Login Regions allow you to integrate the Login Page functionality into any Page.
+        &nbsp;This is useful if you have a Membership site and want to provide quick
+        access for your Members to login from your home page.<br />
+        <br />
+        Login Regions can only be edited from within the [DESIGN] area by a Site
+        Designer.<br />
+        <br />
+        NOTE:&nbsp;There should only be the <span style="font-style: italic;">name</span>
+        and no spaces between the set of tags. You can define this tag as many times as
+        necessary within each Page Style. The&nbsp;<span style=
+        "font-style: italic;">name&nbsp;</span>must exist or this tag is ignored.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;menu&gt;<em>name</em>&lt;/menu&gt;</td>
+
+        <td>This&nbsp;tag will be replaced with the shared contents of the Menu called
+        <em>name</em>.<br />
+        <br />
+        Menus allow you to create single and multi-level, javascript-animated menus
+        for&nbsp;your website areas as necessary.<br />
+        <br />
+        Menus can be edited from within any Page (that is assigned the Page Style) by a
+        Site Manager.<br />
+        <br />
+        NOTE:&nbsp;There should only be the <span style="font-style: italic;">name</span>
+        and no spaces between the set of tags. You can define this tag as many times as
+        necessary within each Page Style. The&nbsp;<span style=
+        "font-style: italic;">name&nbsp;</span>must exist or this tag is ignored.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;menu_sequence&gt;<em>name</em>&lt;/menu_sequence&gt;</td>
+
+        <td>This tag will be replaced with "previous" and "next" arrows that allow the
+        viewer to navigate between the Pages of your website. The navigation arrows
+        correlate with the Menu Items for the Menu called name, and the sequence is based
+        on the ordering of the Menu Items. This is useful if you want your site viewers
+        to be able to navigate your website in a sequential fashion.<br />
+        <br />
+        NOTE: If you have more than one Menu Item linking to the same Page, then only the
+        first Menu Item that links to the Page will be in the sequence.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;pdf&gt;&lt;/pdf&gt; <sup>beta</sup></td>
+
+        <td>This tag will be replaced with a PDF icon that will allow Visitors to view
+        any Page as a PDF (e.g. to save or print). This is a beta feature that might not
+        work for your site. This feature requires the wkhtmltopdf utility which your
+        server administrator may install. Your server administrator may read the
+        installation guide for more information.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;pregion&gt;&lt;/pregion&gt;</td>
+
+        <td>This&nbsp;tag will be replaced with the contents of the next Page Region
+        found within the Page.<br />
+        <br />
+        Page Regions are reserved for basic word processor content and can be edited from
+        within any Page (that is assigned the Page Style) using the Rich-text Editor by
+        any Content Manager with "edit" access to the Folder where the Page
+        resides.<br />
+        <br />
+        NOTE:&nbsp;There should be no spaces or characters between the set of tags. You
+        can define this tag as many times as necessary within each Page Style.<br />
+        <br />
+        IMPORTANT: Unlike all other regions, you do not create Page Regions manually.
+        They are created automatically when a Page is created, and the number of Page
+        Regions created is determined by the number of Page Region tags found in the
+        Page's selected Page Style. &nbsp;If you change the Page's Page Style later, the
+        number of Page Regions will grow if necessary, but never shrink. Page Regions are
+        never deleted until the Page itself is deleted.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;system&gt;<em>page name</em>&lt;/system&gt;</td>
+
+        <td>
+          <p>This&nbsp;tag will be replaced with the dynamic system content for the
+          Page's interactive Page Type (like a Custom Form, Photo Gallery, Calendar View,
+          Order Form, Cart, etc).</p>
+
+          <p>If a Page name is not specified in the System Region, then the interactive
+          Page Type for the Page the viewer is currently viewing will be used.
+          Alternatively, if you enter a Page Name in the System Region, then the
+          interactive Page Type for that Page will be used instead. Pages with the
+          following Page Types are allowed to be entered in the System Region:</p>
+
+          <ul>
+            <li>Calendar View</li>
+
+            <li>Catalog</li>
+
+            <li>Custom Form</li>
+
+            <li>Express Order</li>
+
+            <li>Folder View</li>
+
+            <li>Form List View</li>
+
+            <li>Form View Directory</li>
+
+            <li>Order Form</li>
+
+            <li>Photo Gallery</li>
+
+            <li>Search Results</li>
+
+            <li>Shopping Cart</li>
+          </ul>
+
+          <p>There is no limit to the number of System Regions you can have on a
+          Page.</p>
+
+          <p>The properties of the Page Type can be edited from within the Page by any
+          Content Manager with "edit" access to the Folder where the Page resides.</p>
+
+          <p>TIP: It is a good idea to add this tag in all Page Styles since it is so
+          important to the function of your interactivity and ignored if not
+          necessary.</p>
+
+          <p>IMPORTANT: This tag is required within any Page Style in order to enable the
+          Comments feature for it's Pages.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;tcloud&gt;<em>search results page name</em>&lt;/tcloud&gt;</td>
+
+        <td>This tag will be replaced by a Tag Cloud. A Tag Cloud is a list of Common
+        Keywords or "Tags" in your site. When a Tag is clicked then the user will be sent
+        to the Search Results page that was entered between the
+        &lt;tcloud&gt;&lt;/tcloud&gt; tags.<br />
+        <br />
+        Web Browser Keywords for Pages will be included in Tag Clouds for Search Results
+        Pages that do not search Products. Search Keywords for Products and Product
+        Groups will be included in Tag Clouds for Search Results Pages that search
+        Products.<br />
+        <br />
+        NOTE: If a Search Results page name was not entered between the tags then the
+        first Search Results page that is found will be used for the tag.<br />
+        <br />
+        NOTE: Anytime a Page that has "Include in Site Search" enabled is modified then
+        it's Web Browser Keywords, if any, will be added to the Tag Cloud.<br />
+        <br />
+        NOTE: Anytime a Product or Product Group that is being searched by a Search
+        Results page is modified then it's Search Keywords, if any, will be added to the
+        Tag Cloud.<br />
+        <br /></td>
+      </tr>
+
+      <tr>
+
+        <td>
+          <h3>&lt;/body&gt;</h3>
+        </td>
+
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <h2>Previewing a Page Style</h2>
+
+  <p>To preview a Page Style simply click on the "Preview" button. This will open up the
+  Page Style Preview window and display a Page that is using the HTML code that is in the
+  editor.</p>
+
+  <p>NOTE: The "Preview" button does not save the changes you have made to the Page
+  Style. However, all changes will be retained in the editor until the "Cancel" button is
+  clicked.</p>
+
+  <p>While previewing a Page Style you can use the "Page to Preview" pick list to change
+  the Page you are previewing to any Page within your site. This is helpful when building
+  micro-sites.</p>
+
+  <p>NOTE: While previewing a Page Style, if you click on a link that is on the Page that
+  you are previewing then it will take you out of the preview mode.</p>
+
+  <h2>Fixing a Broken Login Page</h2>
+
+  <p><br />
+  Since even the system itself uses a Page Style to define the Login Page for Site
+  Administrators and Designers,&nbsp;if you accidentally remove the
+  &lt;system&gt;&lt;/system&gt; tag from the Login Page's Page Style, you will not be
+  able to login to your website!<br />
+  <br />
+  If this happens, you can use the login URL shortcut to login:<br />
+  <br />
+  <a href=
+  "http://example.com/%5E%5ESOFTWARE_NAME%5E%5E/index.php?u=username&amp;p=password">http://<span style="font-style: italic;">www.mywebsite.com</span>/login/index.php?u=<span style="font-style: italic;">username</span>&amp;p=<span style="font-style: italic;">password</span></a><br />
+
+  WE RECOMMEND YOU MAINTAIN A BOOKMARK USING YOUR OWN WEBSITE, USERNAME, AND
+  PASSWORD.</p>
+
+  <p>Be sure the first thing you do once you have logging is add the
+  &lt;system&gt;&lt;/system&gt; tag back into the Login Page's Page Style, so you and
+  your other Users can use the Login Page again!</p>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Edit Theme</h1>
+
+  <p>Edit the CSS File to the web server. Themes are CSS files that are created by the
+  Theme Designer (System Themes) or by uploading a CSS file into the system (Custom
+  Themes). Here are the properties:</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Theme&nbsp;File Name</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Name:</td>
+
+        <td>You can change the name of this Theme file on the web server.<br />
+        <br />
+        WARNING: Be sure that the filename extension is .css or else the Theme will no
+        work correctly.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Theme&nbsp;File Access Control</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Folder:</td>
+
+        <td>This is the Folder that the Theme file will be placed in. &nbsp;The Folder's
+        access control will dictate who can view the Theme.<br />
+        <br />
+        IMPORTANT: Be sure you select a Public Folder if you want all site Visitors to be
+        able to see the website using this Theme.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Theme File Description</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Description:</td>
+
+        <td>Enter a description for this file that can be viewed by any Site
+        Designer.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Activate Theme to Make it Live</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>When a Theme is active, it is inserted automatically into every System Page
+        Style (and every Custom Page Style that has the
+        &lt;stylesheet&gt;&lt;/stylesheet&gt; tag defined within it). Themes allow you
+        can instantly change the look and feel of you entire website with a click of a
+        button by activating a Theme from this screen.<br />
+        <br />
+        WARNING: If you activate a Theme that doesn't work with your HTML Page Styles
+        correctly, you could render your website unreadable. If this happens, activate
+        another Theme until you can fix the problematic Theme.</td>
+      </tr>
+
+      <tr>
+        <td>Activate for Desktop:</td>
+
+        <td>Check this box if you wish to set this Theme as the active Theme viewed by
+        all desktop (computer / tablet) visitors.</td>
+      </tr>
+
+      <tr>
+        <td>Activate for Mobile:</td>
+
+        <td>Check this box if you wish to set this Theme as the active Theme viewed by
+        all mobile (phone) visitors.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <h2>Previewing Themes</h2>
+
+  <p>You can apply any Theme to you website without activating it first. This means that
+  you can browse your actual public website Pages through the new Theme, without any
+  other website Visitor being affected. All other Visitors will see the active Theme.
+  This "Theme Preview Mode" is enabled until you close your browser (end your session),
+  or activate a Theme.</p>
+
+  <h2>Deleting Themes</h2>
+
+  <p>To delete a Theme from the web server, click on the Theme you wish to delete and
+  click "Delete".</p>
+
+  <p>WARNING: Take care when deleting Theme files, there is no undo. Don't delete an
+  active Theme or you will render your website unreadable (if you are using Themes in
+  your Page Styles. If this happens, activate another Theme.</p>
+
+  <p>TIP: Use Theme Preview Mode (found through the [Pages] tab) to help you develop and
+  test new Themes without affecting your "live" website.</p>
+
+  <h2>Custom Format Feature</h2>
+
+  <p>To further control the consistency of the content added by Content Managers, we have
+  created a number of Custom Formats that are made available to your Content Managers
+  when editing content using the Rich-text Editor's "Format" selections.</p>
+
+  <p>If are using the built-in stylesheet-driven website themes, then you have access to
+  a series of styling for different types of content we have created for you. Each style
+  becomes a Custom Format that you can apply them to your content. (However, you can
+  still override any Custom Formats by adding your own CSS to the Advanced Styling area
+  through the Theme Designer).</p>
+
+  <p>So that your content would be portable from one Theme to another, we devised a
+  system based on a two-tone color scheme. In a two-tone color scheme, there is a
+  "primary" and "secondary" color. We have taken that concept to develop primary and
+  secondary buttons, boxes, links, and other common website styles. This allows you to
+  extend this concept to your own website designs and style guides so that all content
+  will work across all themes!</p>
+
+  <p>TIP: You should use these custom formats instead of "Fonts", "Font Styles", and
+  "Font Sizes" which are disabled by default and are not compatible with the system
+  themes and web content standards.</p>
+
+  <p>NOTE: We have included several custom formats within the system provided themes to
+  help you add more pazazz to your content. We have also added a Tag Picker to help you
+  more easily "grab" content to style.</p>
+
+  <h3>Adding Custom Formats to Custom Themes</h3>
+
+  <p>If you uploaded your own CSS Theme, then you can add Custom Formats to the Rich-text
+  Editor by adding the &lt;custom_formats&gt;&lt;/custom_formats&gt; tags within CSS
+  comments in your Custom Theme files, like this:</p>
+
+  <p><span style="font-family: Courier New,Courier,monospace;">/* &lt;custom_formats&gt;
+  */</span><br style="font-family: Courier New,Courier,monospace;" />
+  <br style="font-family: Courier New,Courier,monospace;" />
+  <span style="font-style: italic; font-family: Courier New,Courier,monospace;">define
+  your CSS custom formats here...<br />
+  <br /></span> <span style="font-family: Courier New,Courier,monospace;">/*
+  &lt;/custom_formats&gt; */</span></p>
+
+  <p>NOTE: Be sure that the &lt;custom format&gt; and &lt;/custom_format&gt; comments are
+  spelled correctly and appear around the styles you want to make available to the
+  Rich-text Editor or they will be ignored. (For an example, look at the CSS generated
+  with every System Theme.)</p>
+
+  <p>TIP: Once you have defined all necessary Custom Formats in your Theme, we recommend
+  that you disable the Rich-text Editor menu buttons from the Site Settings to prevent
+  your Content Managers from using fonts, colors, and styling that is inconsistent with
+  the website's intended design.</p>
+</body>
+</html>

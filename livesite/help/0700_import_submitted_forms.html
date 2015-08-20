@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Import Submitted Forms</h1>
+
+  <p>You can Import Submitted Form data from your local computer using a simple
+  spreadsheet file.</p>
+
+  <p>The CSV text file format is a universally accepted way to move data between systems,
+  and since most spreadsheet and database programs can import/export CSV text
+  files,&nbsp;it is an ideal way to exchange data.</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Select Formatted Text File to Upload</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>CSV File:</td>
+
+        <td>Browse and select the CSV file from your local computer that contains the
+        Submitted Form data you wish to import.<br />
+        <br />
+        If you are creating a CSV file from a spreadsheet file, each column in the FIRST
+        row of the spreadsheet must match a Field Name from the Custom Form. &nbsp;Once a
+        field match is found, the same column for all additional rows will be imported
+        into the database for that Field. &nbsp;This matching of fields continues for all
+        columns in the first row. When complete, a new Submitted Form that will be
+        created for each additional row of data found.<br />
+        <br />
+        If you are importing data for a field that can contain multiple answers (i.e.
+        pick list with multiple selection or check box), you can include multiple answers
+        by separating them with a comma (e.g. Apple, Banana, Pear).<br />
+        <br />
+        NOTE: The columns can be in any order. If you are saving a CSV file on a Mac, you
+        might need to select the "Windows CSV" format in Excel.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Select the Custom Form</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Custom Form:</td>
+
+        <td>Select the Custom Form that contains the Form Definition (fields) that will
+        be imported.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <h2>File Upload Fields</h2>
+
+  <p>If the Custom Form has a file upload field, then you might want to connect the
+  Submitted Forms to Files. First, upload all of the necessary files via the Files tab.
+  You may upload a ZIP file in order to upload many files at once. Next, enter the file
+  name, for each file that has already been uploaded, in the file upload field column in
+  the CSV file. When files are uploaded into the system underscores are inserted for
+  spaces in the file name, so make sure the file names in the CSV file are correct.</p>
+
+  <p>Please be aware that a Submitted Form may not be connected to a Design File or a
+  File that is already an Attachment. Also, you must have edit access to the File's
+  Folder in order to connect it to a Submitted Form.</p>
+
+  <h2>Limitations when importing Submitted Forms</h2>
+
+  <p>There are two methods for collecting Submitted Form data. &nbsp;The most common is
+  to capture a Submitted Form each time a Custom Form Page is submitted through the
+  website.&nbsp;The other method is to import the Submitted Form data from a file.</p>
+
+  <p>There are some limitations when importing Submitted Forms:</p>
+
+  <ul>
+    <li>If any Form Fields are set to "Connect to Contact",&nbsp;Contacts and User
+    accounts are not updated.</li>
+
+    <li>No Custom Form Page work-flow features or auto-responders are triggered.</li>
+  </ul>
+
+  <p>&nbsp;</p>
+</body>
+</html>

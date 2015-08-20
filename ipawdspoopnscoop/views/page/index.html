@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ipawd's Poop 'N Scoop LLC</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav id="sticker" class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="/images/Vector_Edit.png" alt=""/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="about-nav" href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!--<div class="col-md-offset-3">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+    </div>-->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div><img class="img-responsive carousel_img" src="/images/keets.JPG" alt="..."></div>
+            <div class="carousel-caption">
+                <div class="col-md-4"><h1 class="slide-caption">Services</h1><button type="button" class="btn btn-primary"><a class="carousel-link" href="services.html">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div><img class="img-responsive carousel_img" src="/images/cats.jpg" alt="..."></div>
+            <div class="carousel-caption">
+                <div class="col-md-4"><h1 class="slide-caption">About Us</h1>
+                    <button type="button" class="btn btn-primary"><a class="carousel-link" href="about.html">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div><img class="img-responsive carousel_img" src="/images/Simon.jpg" alt="..."></div>
+            <div class="carousel-caption">
+                <div class="col-md-4"><h1 class="slide-caption">Events</h1>
+                    <button type="button" class="btn btn-primary"><a class="carousel-link" href="calendar.html">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div><img class="img-responsive carousel_img" src="/images/GrassDog.jpg" alt="..."></div>
+            <div class="carousel-caption">
+                <div class="col-md-4"> <h1 class="slide-caption">Contact Us</h1>
+                    <button type="button" class="btn btn-primary"><a class="carousel-link" href="contact.html">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>© 2011-2014 Ipawd's Poop 'N Scoop LLC</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/stickybar.js"></script>
+<script>
+    $("#sticker").sticky({topSpacing: 0});
+</script>
+</body>
+</html>

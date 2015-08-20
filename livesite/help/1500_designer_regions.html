@@ -1,0 +1,546 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>All Designer Regions</h1>
+
+  <p>Designer Regions are shared content areas that you can create for only your Site
+  Designers to maintain directly from a Page. &nbsp;These areas are better for widget
+  coding, javascript, etc., where you don't want someone without HTML programming
+  knowledge to accidentally edit it.</p>
+
+  <p>Designer&nbsp;Regions typically contain javascript, HTML widgets, embedded Flash
+  objects, etc.</p>
+
+  <p>Since Designer Regions are placed into Page Styles, they become shared content that
+  can be displayed on one, some, or all of your website Pages.</p>
+
+  <p>TIP: Designer Regions are ideal for adding news feeds and other third-party widgets
+  to your website.</p>
+
+  <p>Unlike Page Regions, Designer Regions must be create manually by the Site Designer
+  before they can be edited.</p>
+
+  <p>NOTE: Designer Regions are not editable using the&nbsp;Rich-text Editor because
+  it&nbsp;strips out non-HTML/CSS tags in an attempt to "clean" the content before it is
+  saved. It does this to help the Content Managers from adding bad tags to their Page
+  content and breaking the Page's layout and functionality.</p>
+
+  <h2>Searching Designer Regions</h2>
+
+  <p>You can enter a search term in the box on this screen and search for any Designer
+  Region by it's properties and content.</p>
+
+  <h2>Widgets</h2>
+
+  <p>There are a few built-in functions, called widgets that allow you to add advanced
+  functionality to your HTML website design.</p>
+
+  <h3>Contact Widget</h3>
+
+  <p>The Contact Widget is a PHP script you can add to your website HTML that accepts
+  contact information and creates a Contact in the database. The Contact Widget, when
+  submitted, will create a Contact in a Contact Group, add the Contact fields that are
+  collected, e-mail the Contact fields collected to any User with "Notify of Leads"
+  selected, and then redirect the Submitter to any URL.</p>
+
+  <p>TIP: Contact Widgets are useful when you need to collect Contacts but you don't want
+  to dedicate the whole Page for the purpose, like a site footer with a "join mailing
+  list" area.&nbsp; If you need more control over collecting Contacts and using
+  auto-responders, consider using the more powerful Custom Forms features.</p>
+
+  <p>To add the Contact Widget to your website, simply cut and paste the HTML below into
+  any Designer Region or directly into a Page Style, be sure to replace the "/login/"
+  directory with the directory you login with:</p>
+
+  <p><span style="font-family: Courier New,Courier,monospace;">&lt;form
+  action="/login/contact.php" method="post" /&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; &lt;input
+  name="return_url" type="hidden"
+  value="http://www.mydomain.com/pages/my_confirmation_page" /&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; &lt;input
+  name="lead_source" type="hidden" value="Website Contact Widget" /&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; &lt;input
+  name="group" type="hidden" value="Leads" /&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; &lt;input
+  name="email_subject" type="hidden" value="Thank you for contacting us."
+  /&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+  &lt;table&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;First Name:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="first_name" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Last Name:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="last_name" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Nickname:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="nickname" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Company:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="company" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Title:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="title" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Department:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="department" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Office Location:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="office_location" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business Address 1:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_address_1" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business Address 2:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_address_2" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business City:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_city" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business State:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_state" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business Country:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_country" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business Zip Code:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_zip_code" type="text" size="30" maxlength="10"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business Phone:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_phone" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Business Fax:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="business_fax" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home Address 1:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_address_1" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home Address 2:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_address_2" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home City:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_city" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home State:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_state" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home Country:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_country" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home Zip Code:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_zip_code" type="text" size="30" maxlength="10"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home Phone:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_phone" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Home Fax:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="home_fax" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Mobile Phone:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="mobile_phone" type="text" size="30" maxlength="50"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;E-mail Address:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="email_address" type="text" size="30" maxlength="100"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Website:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input name="Website" type="text" size="30" maxlength="255"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Opt-Out:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;input type="checkbox" name="opt_out" value="yes" class="checkbox"
+  /&gt;&lt;/td&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;Description:&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;td&gt;&lt;textarea name="description" cols="30"
+  rows="5"&gt;&lt;/textarea&gt;&lt;/td&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style=
+  "font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &lt;/tr&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+  &lt;/table&gt;</span><br style="font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp; &lt;input
+  type="submit" name="submit" value="Submit" /&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&lt;/form&gt;</span></p>
+
+  <p>All fields are optional except for "return_url".&nbsp; The "return_url" field
+  defines where the Submitter will be directed after the Contact Widget is submitted.</p>
+
+  <h3>Site Search Widget</h3>
+
+  <p>Site Search Widget is a PHP script that you can embed in any Designer Region or Page
+  Style that will allow your Visitors to search Pages for content and return the results
+  on the Search Results Page. &nbsp;You can place the Site Search Widget anywhere on your
+  site.</p>
+
+  <p>All "searchable" Pages will be searched by the Site Search Widget. &nbsp;If you
+  don't want some Pages found, even if the Visitor or User has access to it's
+  Folder,&nbsp;disable "Include in Search" in those Pages and they will not be found.</p>
+
+  <p>Site Search will only display the search results for Pages that the Visitor or User
+  has "view" access to. &nbsp;So,&nbsp;website Visitor will only see search results from
+  Pages that are in Public Folders, and Members will see both results from Public Folder
+  Pages and Membership Folder Pages, and so on.</p>
+
+  <p>To add the Site Search Widget to your website, simply cut and paste the HTML below
+  into any Designer Region or directly into a Page Style, be sure to replace the
+  "/login/" directory with the directory you login with:</p>
+
+  <p><span style="font-family: Courier New,Courier,monospace;">&lt;form
+  action="/login/search.php" style="margin: 0px"&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&lt;input type="text"
+  name="query" class="search-query" /&gt;&lt;input type="submit" value="Search"
+  class="search-submit" /&gt;</span><br style=
+  "font-family: Courier New,Courier,monospace;" />
+  <span style="font-family: Courier New,Courier,monospace;">&lt;/form&gt;</span></p>
+
+  <p>TIP:&nbsp; You may also point the form action to a Search Results Page. (ex.
+  action="/pages/search_results")</p>
+
+  <p>NOTE:&nbsp; Site Search Widget only searches Page Regions and not Common Regions or
+  Menus. &nbsp;This is necessary of else the search results would return duplicate
+  information for all Page that share content from Common Regions.</p>
+
+  <p>IMPORTANT: Be sure that all Pages that should be searched have "Include in Search"
+  Page Property selected, and that you have a Search Results Page created that is in a
+  Public Folder.</p>
+
+  <h3>Embedded Media</h3>
+
+  <p>Adding media objects to your Designer Region is easy. &nbsp;However, we have found
+  some issues with their use on some client computers. &nbsp;If you are having problems
+  rendering your embedded media that has been uploaded to your website, edit the media's
+  Properties and&nbsp;use the actual URL</p>
+
+  <p>(e.g. <span style=
+  "font-family: Courier New,Courier,monospace;">/[dir]/get_file.php?name=example.wmv</span>)
+  instead of the virtual URL (e.g. <span style=
+  "font-family: Courier New,Courier,monospace;">/files/example.wmv</span>). We are not
+  sure why the rewriting</p>
+
+  <p>of the URLs matters, but it appears that a small percentage of client computers
+  don't like the virtual URLs, probably because of some unrelated compatibility issue
+  that has not been indentified.</p>
+
+  <p>If that does not work, you should also consider adding a URL parameter to your
+  media's Properties as follows, since there seems&nbsp;to be an issue for some versions
+  of the&nbsp;Internet Explorer browser:</p>
+
+  <p><span style=
+  "font-family: Courier New,Courier,monospace;">&lt;object&gt;...</span><span style=
+  "font-family: Courier New,Courier,monospace;">&lt;param name="url"
+  value="/files/example.wmv" /&gt;...</span><span style=
+  "font-family: Courier New,Courier,monospace;">&lt;/object&gt;</span></p>
+
+  <p>Be sure to also replace the virtual URL with the actual URL as described above.</p>
+</body>
+</html>

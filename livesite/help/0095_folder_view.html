@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+  <h1>Folder View Page Type</h1>
+
+  <p>The Folder View Page will list Folders, Pages (which are included in site search),
+  and Files that are inside of the same Folder as the Folder View Page and that the
+  Visitor has access to. This Page Type is useful when you want to give your Visitors or
+  Users a dynamic list of the content that they have access to. For example, you might
+  want to use this Page Type for an intranet that shows private Pages that a User has
+  access to.</p>
+
+  <p>Here are the Page Type Properties available to this Page Type:</p>
+
+  <table class="field" border="0">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>Include Pages:</td>
+
+        <td>Check this in order to include Pages in the list of items. You can either
+        include only Pages, only Files, or both. Please be aware that this feature will
+        only include Pages where "Include in Site Search" is checked. This allows you to
+        choose which Pages you want to include in the Folder View.</td>
+      </tr>
+
+      <tr>
+        <td>Include Files:</td>
+
+        <td>Check this in order to include Files in the list of items. You can either
+        include only Pages, only Files, or both.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>The Folder View will include a link to the User's start Page at the top, if one
+  exist and if the start Page is not the same as the Folder View Page.</p>
+
+  <p>The Folder View does not just show the items directly under the Page's folder; it
+  also digs deep into child Folders in order to show all items. The Folder View will only
+  show items that the Visitor has access to. The Visitor must be logged in in order to
+  see Private or Membership items. Registration and Guest items will be shown, even if
+  the Visitor is not logged in. Once the Visitor clicks on a Registration or Guest item,
+  then he/she will be asked to login or register.</p>
+
+  <p>The Folder View does not show the following items:</p>
+
+  <ul>
+    <li>Items that User does not have access to.</li>
+
+    <li>Folders that have no items to list.</li>
+
+    <li>Pages that are not included in the site search.</li>
+
+    <li>Archived items.</li>
+
+    <li>The Folder View Page itself.</li>
+
+    <li>The following Page types are not included:
+
+      <ul>
+        <li>Registration Confirmation</li>
+
+        <li>Membership Confirmation</li>
+
+        <li>View Order</li>
+
+        <li>Custom Form Confirmation</li>
+
+        <li>Form Item View</li>
+
+        <li>Calendar Event View</li>
+
+        <li>Catalog Detail</li>
+
+        <li>Shipping Address &amp; Arrival</li>
+
+        <li>Shipping Method</li>
+
+        <li>Billing Information</li>
+
+        <li>Order Preview</li>
+
+        <li>Order Receipt</li>
+
+        <li>Affiliate Sign Up Confirmation</li>
+
+        <li>Affiliate Welcome</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>If Files are selected to be included, then Design Files will also be included.</p>
+
+  <p>Folders are listed in order by their sort order property. Pages and Files are listed
+  in alphabetical order, with Pages being listed above Files.</p>
+
+  <p>If a Page has a web browser title, then that will be used for the link label.
+  Otherwise, the Page name is used. If a web browser description exists then the
+  description will be included below the link. For Files, the File name is always used
+  for the link label. If a File has a description, then the description will be included
+  below the link.</p>
+
+  <p>The name of a Folder, that a Visitor does not have view access to, might still be
+  shown if the Folder contains a child Folder that the Visitor does have view access to.
+  The Folder View works this way in order to preserve hierarchy and indentation. Pages
+  and Files directly under the Folder are not shown (only the Folder name appears), so
+  this does not cause a security issue.</p>
+
+  <p><a href="0090_edit_page_properties.html" onclick=
+  "update_help_content('0090_edit_page_properties'); return false;" style=
+  "font-weight: bold;">Back to Edit Page Properties</a></p>
+</body>
+</html>

@@ -1,0 +1,2136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+  <h1>Create/Edit Custom Form Field</h1>
+
+  <p>There are several different field types that can be added to any Custom Form.&nbsp;
+  Each field type has properties to allow you to collect many different types of
+  information.<br />
+  <br />
+  Here is a list of the Field Types you can collect using a Custom Form and their
+  associated properties:</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td><span style="font-weight: bold;">Text Box<br />
+        <br /></span> This field type is used to collect a single line of text data.</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS / Search Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element and/or a Site Search
+          Element.</p>
+
+          <p>RSS Elements are used with Form List View Page Types to broadcast Submitted
+          Forms as an RSS feed and are defined as follows:</p>category: This is the RSS
+          category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+
+          <p>NOTE: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+
+          <p>NOTE: You will need to make sure that the Form Item View page property for
+          the Form List View Page is set or that the layout for the Form List View
+          contains a link to a Form Item View Page so that the links in the RSS will
+          work.</p>
+
+          <p>Site Search Elements are used to store form data for the results set that is
+          displayed when a site search is performed and are defined as follows:</p>title:
+          Select this value for any field you wish to be used by Site Search as the Title
+          of the submitted form data in the search results.<br />
+          description: Select this value for any field you wish to be used by Site Search
+          as the Description of the submitted form data in the search results.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Size:</p>
+        </td>
+
+        <td>
+          <p>The size in characters of the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Maximum Characters:</p>
+        </td>
+
+        <td>
+          <p>This is the maximum number of characters that you will allow to be entered
+          in this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Connect to Contact:</p>
+        </td>
+
+        <td>
+          <p>If you would like this field to be pre-filled with a field from the
+          Submitter's Contact record, select the field your would like to connect.&nbsp;
+          When the Custom Form is submitted, the Contact field will be updated with the
+          value submitted for this field.</p>
+
+          <p>NOTE:&nbsp; This feature will only work if the Submitter is logged into the
+          system when the form data is submitted (ie. the Page containing the Custom Form
+          is located in a non-public Folder).&nbsp; Also, take care not to connect to a
+          Contact field that cannot store the same type of data or you may experience
+          unexpected results (see Contacts for more information).</p>
+
+          <p>TIP: If someone needs to submit a Custom Form on behalf of someone else and
+          the submitter does not want his/her Contact info prefilled or updated, then the
+          submitter can add "?connect_to_contact=false" to the end of the URL in order to
+          disable the Connect to Contact feature. An example appears below.</p>
+
+          <p>http://www.example.com/pages/custom_form?connect_to_contact=false</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data will be able to
+          view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Quiz Question:</td>
+
+        <td>
+          <p>Check this box to include this field's value in the passing percentage
+          calculation.&nbsp; (This field works in conjunction&nbsp;with the "Enable Quiz"
+          and "Quiz Pass Percentage" properties of the Custom Form, which&nbsp;prevents
+          the submitter from going to the&nbsp;"Next Page" without a passing
+          percentage.)</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Correct Answer:</td>
+
+        <td>
+          <p>Enter the value to match against the value entered by the Custom Form's
+          submitter.&nbsp; This value is not case-sensitive.&nbsp; Leading and trailing
+          spaces will be ignored.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p><span style="font-weight: bold;">Text Area</span></p>
+
+          <p>This field type is used to collect multiple lines of text data.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element. RSS Elements are used
+          with Form List View Page Types to broadcast Submitted Forms as an RSS
+          feed.<br />
+          <br />
+          category: This is the RSS category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+          <br />
+          TIP: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Maximum Characters:</p>
+        </td>
+
+        <td>
+          <p>This is the maximum number of characters that you will allow to be entered
+          in this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Rows:</p>
+        </td>
+
+        <td>
+          <p>The total number of rows of text to display in the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Columns:</p>
+        </td>
+
+        <td>
+          <p>The total number of columns of text to display in the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Connect to Contact:</p>
+        </td>
+
+        <td>
+          <p>If you would like this field to be pre-filled with a field from the
+          Submitter's Contact record, select the field your would like to connect.&nbsp;
+          When the Custom Form is submitted, the Contact field will be updated with the
+          value submitted for this field.</p>
+
+          <p>NOTE:&nbsp; This feature will only work if the Submitter is logged into the
+          system when the form data is submitted (i.e. the Page containing the Custom
+          Form is located in a non-public Folder). Also, take care not to connect to a
+          Contact field that cannot store the same type of data (see Contacts for more
+          information).</p>
+
+          <p>TIP: If someone needs to submit a Custom Form on behalf of someone else and
+          the submitter does not want his/her Contact info prefilled or updated, then the
+          submitter can add "?connect_to_contact=false" to the end of the URL in order to
+          disable the Connect to Contact feature. An example appears below.</p>
+
+          <p>http://www.example.com/pages/custom_form?connect_to_contact=false</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data will be able to
+          view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>NOTE: Text Area fields cannot be Quiz Questions.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p style="font-weight: bold;">Pick List</p>
+
+          <p>This field type is used to collect one or more values from a drop-down list
+          of predefined values.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element. RSS Elements are used
+          with Form List View Page Types to broadcast Submitted Forms as an RSS
+          feed.<br />
+          <br />
+          category: This is the RSS category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+          <br />
+          TIP: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Size:</p>
+        </td>
+
+        <td>
+          <p>The size in characters of the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Allow Multiple Values:</p>
+        </td>
+
+        <td>
+          <p>If you want to accept multiple values, check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Connect to Contact:</p>
+        </td>
+
+        <td>
+          <p>If you would like this field to be pre-filled with a field from the
+          Submitter's Contact record, select the field your would like to connect.&nbsp;
+          When the Custom Form is submitted, the Contact field will be updated with the
+          value submitted for this field.&nbsp;</p>
+
+          <p>NOTE:&nbsp; This feature will only work if the Submitter is logged into the
+          system when the form data is submitted (i.e. the Page containing the Custom
+          Form is located in a non-public Folder). Also, take care not to connect to a
+          Contact field that cannot store the same type of data (see Contacts for more
+          information).</p>
+
+          <p>TIP: If someone needs to submit a Custom Form on behalf of someone else and
+          the submitter does not want his/her Contact info prefilled or updated, then the
+          submitter can add "?connect_to_contact=false" to the end of the URL in order to
+          disable the Connect to Contact feature. An example appears below.</p>
+
+          <p>http://www.example.com/pages/custom_form?connect_to_contact=false</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data will be able to
+          view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Choices:</p>
+        </td>
+
+        <td>
+          <p>"Choices" allow you to display a list of items with each item in the list
+          representing a (optional) corresponding "value" that is actually store with the
+          form data.&nbsp; Enter the displayed choices and their optional corresponding
+          values, separated by a pipe symbol "|".&nbsp; Separate each pick list item with
+          a carriage return.</p>
+
+          <p>There are three possible formats for this field type:</p>
+
+          <p>Choice 1,...<br />
+          (Displays "Choice 1" and stores "Choice 1" if selected)</p>
+
+          <p>Choice 1 | Value 1,...<br />
+          (Displays "Choice 1" and stores "Value 1" if selected)</p>
+
+          <p>Choice 1 | Value 1 | on<br />
+          (Displays "Choice 1" which is selected by default, and stores "Value 1" if
+          selected)</p>
+
+          <p>If you want to e-mail an additional administrator when a Visitor selects a
+          specific choice, then you may add ^^example@example.com^^ to the end of the
+          choice line, as can be seen in the example below. You should replace
+          example@example.com with the administrator's e-mail address. Also, the
+          administrator e-mail properties must be set in the Page Type Properties for the
+          Custom Form. This feature is supported for Custom Forms but not Product
+          Forms.</p>
+
+          <p>Choice 1 ^^example@example.com^^</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Quiz Question:</td>
+
+        <td>
+          <p>Check this box to include this field's value in the passing percentage
+          calculation.&nbsp; (This field works in conjunction&nbsp;with the "Enable Quiz"
+          and "Quiz Pass Percentage" properties of the Custom Form, which&nbsp;prevents
+          the submitter from going to the&nbsp;"Next Page" without a passing
+          percentage.)</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Correct Answer:</td>
+
+        <td>Enter the value to match against the value entered by the Custom Form's
+        submitter.&nbsp; This value is not case-sensitive.&nbsp; Leading and trailing
+        spaces will be ignored.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p style="font-weight: bold;">Radio Button</p>
+
+          <p>This field type is used to collect only one value from a list of values.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element. RSS Elements are used
+          with Form List View Page Types to broadcast Submitted Forms as an RSS
+          feed.<br />
+          <br />
+          category: This is the RSS category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+          <br />
+          TIP: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Connect to Contact:</p>
+        </td>
+
+        <td>
+          <p>If you would like this field to be pre-filled with a field from the
+          Submitter's Contact record, select the field your would like to connect.&nbsp;
+          When the Custom Form is submitted, the Contact field will be updated with the
+          value submitted for this field.&nbsp;</p>
+
+          <p>NOTE:&nbsp; This feature will only work if the Submitter is logged into the
+          system when the form data is submitted (ie. the Page containing the Custom Form
+          is located in a non-public Folder). Also, take care not to connect to a Contact
+          field that cannot store the same type of data (see Contacts for more
+          information).</p>
+
+          <p>TIP: If someone needs to submit a Custom Form on behalf of someone else and
+          the submitter does not want his/her Contact info prefilled or updated, then the
+          submitter can add "?connect_to_contact=false" to the end of the URL in order to
+          disable the Connect to Contact feature. An example appears below.</p>
+
+          <p>http://www.example.com/pages/custom_form?connect_to_contact=false</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data (see [FORMS &amp;
+          VIEWS]) will be able to view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Choices:</p>
+        </td>
+
+        <td>
+          <p>"Choices" allow you to display a list of items with each item in the list
+          representing a (optional) corresponding "value" that is actually store with the
+          form data.&nbsp; Enter the displayed choices and their optional corresponding
+          values, separated by a pipe symbol "|".&nbsp; Separate each pick list item with
+          a carriage return.</p>
+
+          <p>There are three possible formats for this field type:</p>
+
+          <p>Choice 1,...<br />
+          (Displays "Choice 1" and stores "Choice 1" if selected)</p>
+
+          <p>&nbsp;Choice 1 | Value 1,...<br />
+          (Displays "Choice 1" and stores "Value 1" if selected)</p>
+
+          <p>&nbsp;Choice 1 | Value 1 | on<br />
+          (Displays "Choice 1" which is selected by default, and stores "Value 1" if
+          selected)</p>
+
+          <p>If you want to e-mail an additional administrator when a Visitor selects a
+          specific choice, then you may add ^^example@example.com^^ to the end of the
+          choice line, as can be seen in the example below. You should replace
+          example@example.com with the administrator's e-mail address. Also, the
+          administrator e-mail properties must be set in the Page Type Properties for the
+          Custom Form. This feature is supported for Custom Forms but not Product
+          Forms.</p>
+
+          <p>Choice 1 ^^example@example.com^^</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Quiz Question:</td>
+
+        <td>&nbsp;Check this box to include this field's value in the passing percentage
+        calculation.&nbsp; (This field works in conjunction&nbsp;with the "Enable Quiz"
+        and "Quiz Pass Percentage" properties of the Custom Form, which&nbsp;prevents the
+        submitter from going to the&nbsp;"Next Page" without a passing percentage.)</td>
+      </tr>
+
+      <tr>
+        <td>Correct Answer:</td>
+
+        <td>
+          <p>Enter the value to match against the value entered by the Custom Form's
+          submitter.&nbsp; This value is not case-sensitive.&nbsp; Leading and trailing
+          spaces will be ignored.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p style="font-weight: bold;">Check Box</p>
+
+          <p>This field type is used to collect one or more values from a list of
+          values.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element. RSS Elements are used
+          with Form List View Page Types to broadcast Submitted Forms as an RSS
+          feed.<br />
+          <br />
+          category: This is the RSS category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+          <br />
+          TIP: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Connect to Contact:</p>
+        </td>
+
+        <td>
+          <p>If you would like this field to be pre-filled with a field from the
+          Submitter's Contact record, select the field your would like to connect.&nbsp;
+          When the Custom Form is submitted, the Contact field will be updated with the
+          value submitted for this field.&nbsp;</p>
+
+          <p>NOTE:&nbsp; This feature will only work if the Submitter is logged into the
+          system when the form data is submitted (ie. the Page containing the Custom Form
+          is located in a non-public Folder). Also, take care not to connect to a Contact
+          field that cannot store the same type of data (see Contacts for more
+          information).</p>
+
+          <p>TIP: If someone needs to submit a Custom Form on behalf of someone else and
+          the submitter does not want his/her Contact info prefilled or updated, then the
+          submitter can add "?connect_to_contact=false" to the end of the URL in order to
+          disable the Connect to Contact feature. An example appears below.</p>
+
+          <p>http://www.example.com/pages/custom_form?connect_to_contact=false</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data&nbsp; will be able
+          to view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Choices:</p>
+        </td>
+
+        <td>
+          <p>"Choices" allow you to display a list of items with each item in the list
+          representing a (optional) corresponding "value" that is actually store with the
+          form data.&nbsp; Enter the displayed choices and their optional corresponding
+          values, separated by a pipe symbol "|".&nbsp; Separate each pick list item with
+          a carriage return.</p>
+
+          <p>There are three possible formats for this field type:</p>
+
+          <p>Choice 1,...<br />
+          (Displays "Choice 1" and stores "Choice 1" if selected)</p>
+
+          <p>Choice 1 | Value 1,...<br />
+          (Displays "Choice 1" and stores "Value 1" if selected)</p>
+
+          <p>Choice 1 | Value 1 | on<br />
+          (Displays "Choice 1" which is selected by default, and stores "Value 1" if
+          selected)</p>
+
+          <p>If you want to e-mail an additional administrator when a Visitor selects a
+          specific choice, then you may add ^^example@example.com^^ to the end of the
+          choice line, as can be seen in the example below. You should replace
+          example@example.com with the administrator's e-mail address. Also, the
+          administrator e-mail properties must be set in the Page Type Properties for the
+          Custom Form. This feature is supported for Custom Forms but not Product
+          Forms.</p>
+
+          <p>Choice 1 ^^example@example.com^^</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Quiz Question:</td>
+
+        <td>&nbsp;Check this box to include this field's value in the passing percentage
+        calculation.&nbsp; (This field works in conjunction&nbsp;with the "Enable Quiz"
+        and "Quiz Pass Percentage" properties of the Custom Form, which&nbsp;prevents the
+        submitter from going to the&nbsp;"Next Page" without a passing percentage.)</td>
+      </tr>
+
+      <tr>
+        <td>Correct Answer:</td>
+
+        <td>
+          <p>Enter the value to match against the value entered by the Custom Form's
+          submitter.&nbsp; This value is not case-sensitive.&nbsp; Leading and trailing
+          spaces will be ignored.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p style="font-weight: bold;">File Upload</p>
+
+          <p>This field type is used to upload an Attachment to the Submitted Form. For
+          example, a Visitor might want to upload a picture or a PDF in order to share
+          more information. An Attachment will be deleted automatically when its
+          Submitted Form is deleted. Attachments can be found easily via My Attachments
+          in the Files tab.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Upload to:</p>
+        </td>
+
+        <td>
+          <p>Select the Folder where the File will be stored.&nbsp; This ensures the
+          proper file access rights protection for the file.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Size:</p>
+        </td>
+
+        <td>
+          <p>The size in characters of the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data will be able to
+          view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>NOTE: File Upload fields cannot be Quiz Questions.<br />
+        NOTE: For Product Forms, this field type is not supported.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p style="font-weight: bold;">Information</p>
+
+          <p>This field type is used to add custom text and information between
+          fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for positioning
+          purposes only.&nbsp; Since this field type does not collect form data, it is
+          not exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Information:</p>
+        </td>
+
+        <td>
+          <p>Enter text or HTML in this area that you wish to be displayed in the Custom
+          Form and Custom Form Confirmation.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data&nbsp; will be able
+          to view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>NOTE: Information fields cannot be Quiz Questions.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p style="font-weight: bold;">E-mail Address</p>
+
+          <p>This field type is used to collect a single line of text data that must be
+          formatted as a valid internet e-mail address.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element. RSS Elements are used
+          with Form List View Page Types to broadcast Submitted Forms as an RSS
+          feed.<br />
+          <br />
+          category: This is the RSS category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+          <br />
+          TIP: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Size:</p>
+        </td>
+
+        <td>
+          <p>The size in characters of the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Maximum Characters:</p>
+        </td>
+
+        <td>
+          <p>This is the maximum number of characters that you will allow to be entered
+          in this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Connect to Contact:</p>
+        </td>
+
+        <td>
+          <p>If you would like this field to be pre-filled with a field from the
+          Submitter's Contact record, select the field your would like to connect.&nbsp;
+          When the Custom Form is submitted, the Contact field will be updated with the
+          value submitted for this field.&nbsp;</p>
+
+          <p>NOTE:&nbsp; This feature will only work if the Submitter is logged into the
+          system when the form data is submitted (ie. the Page containing the Custom Form
+          is located in a non-public Folder). Also, take care not to connect this field
+          to a Contact field that cannot store the same type of data (see Contacts for
+          more information).</p>
+
+          <p>TIP: If someone needs to submit a Custom Form on behalf of someone else and
+          the submitter does not want his/her Contact info prefilled or updated, then the
+          submitter can add "?connect_to_contact=false" to the end of the URL in order to
+          disable the Connect to Contact feature. An example appears below.</p>
+
+          <p>http://www.example.com/pages/custom_form?connect_to_contact=false</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data will be able to
+          view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Quiz Question:</td>
+
+        <td>
+          <p>Check this box to include this field's value in the passing percentage
+          calculation.&nbsp; (This field works in conjunction&nbsp;with the "Enable Quiz"
+          and "Quiz Pass Percentage" properties of the Custom Form, which&nbsp;prevents
+          the submitter from going to the&nbsp;"Next Page" without a passing
+          percentage.)</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Correct Answer:</td>
+
+        <td>
+          <p>Enter the value to match against the value entered by the Custom Form's
+          submitter.&nbsp; This value is not case-sensitive.&nbsp; Leading and trailing
+          spaces will be ignored.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p style="font-weight: bold;">Date</p>
+
+          <p>This field type is used to collect a single calendar date, and attempts to
+          resolve the date no matter what format is used to enter the date value.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element. RSS Elements are used
+          with Form List View Page Types to broadcast Submitted Forms as an RSS
+          feed.<br />
+          <br />
+          category: This is the RSS category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+          <br />
+          TIP: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Size:</p>
+        </td>
+
+        <td>
+          <p>The size in characters of the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data will be able to
+          view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Quiz Question:</td>
+
+        <td>
+          <p>Check this box to include this field's value in the passing percentage
+          calculation.&nbsp; (This field works in conjunction&nbsp;with the "Enable Quiz"
+          and "Quiz Pass Percentage" properties of the Custom Form, which&nbsp;prevents
+          the submitter from going to the&nbsp;"Next Page" without a passing
+          percentage.)</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Correct Answer:</td>
+
+        <td>
+          <p>Enter the value to match against the value entered by the Custom Form's
+          submitter.&nbsp; This value is not case-sensitive.&nbsp; Leading and trailing
+          spaces will be ignored.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="field" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Type:</p>
+        </td>
+
+        <td>
+          <p><span style="font-weight: bold;">Date and Time</span></p>
+
+          <p>This field type is used to collect a calendar date and time (timestamp), and
+          attempts to resolve the date and time no matter what format is used to enter
+          the value.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Name:</p>
+        </td>
+
+        <td>
+          <p>This is the Name of this field.&nbsp; It is displayed for sorting purposes
+          and is the column heading when the collected form data for this field is
+          exported.</p>
+
+          <p>The field name cannot contain the following special characters: ^ &amp; [ ]
+          &lt; &gt; /</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>RSS Element:</p>
+        </td>
+
+        <td>
+          <p>This will link a Custom Form field to an RSS Element. RSS Elements are used
+          with Form List View Page Types to broadcast Submitted Forms as an RSS
+          feed.<br />
+          <br />
+          category: This is the RSS category that the Submitted Form will be in.<br />
+          title: This is the RSS title for the Submitted Form.<br />
+          description: This is the RSS description for the Submitted Form.<br />
+          <br />
+          TIP: You must have at least one field in your Custom Form linked to an RSS
+          Element before a feed can be created.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Label:</p>
+        </td>
+
+        <td>
+          <p>This is the Label that is displayed to the left of the field in the Custom
+          Form, the optional Custom Form Confirmation, and when the collected form data
+          is viewed.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Required:</p>
+        </td>
+
+        <td>
+          <p>If data must be present in this field for the Custom Form to be submitted,
+          check this box.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Default Value:</p>
+        </td>
+
+        <td>
+          <p>If this field should be prefilled with a default value when the form
+          appears, enter the value here. For example, if you have a "city" field on your
+          form and you know that the majority of your Visitors will need to submit
+          "Dallas", then you can enter that for a default value so that Visitors do not
+          have to enter it.</p>
+
+          <p>Alternatively, you may check to use the Folder name as the default value.
+          The field will then be prefilled with the Folder name for the Page that the
+          form appeared on. If the form was embedded via a secondary System Region, then
+          the Folder for the Page that was requested in the address bar will be used. See
+          example below for how this feature can be used.</p>
+
+          <p>Let's say that you are the administrator for a school's website. You want to
+          allow staff members to submit news articles via a form for both the Athletics
+          department and the Fine Arts department. John should only have access to submit
+          articles for Athletics. Mike should only have access to submit articles for
+          Fine Arts. You can create one Custom Form with a department pick list field
+          that is office use only with options for "Athletics" and "Fine Arts". You can
+          check to use the Folder name for the default value. Then, you can setup two
+          different Folders called "Athletics" and "Fine Arts" (make sure the Folder
+          names match the department field options exactly). Then, create two different
+          pages that have the same embedded Custom Form via a secondary System Region in
+          a Page Style. Then, give John view access to the Athletics Folder and give Mike
+          view access to the Fine Arts folder. Make sure that that Mike and John do not
+          have edit or view access to the Folder that the original Custom Form is in.
+          Now, when John or Mike submits the form on their own pages, they will not see
+          the office use only department field and the correct department value will be
+          submitted along with the form. You can then create two different Form List
+          Views for the two departments using view filters so that website Visitors can
+          view the articles for each department.</p>
+
+          <p>If this field is connected to a Contact field and the Visitor is logged in,
+          then the Contact field value will be prefilled and the default value will be
+          ignored. Also, the default value will be ignored even if the Contact field
+          value is blank, so that if a User submits a form multiple times and wants a
+          field to be empty, he/she won't have to remove the default value every
+          time.</p>
+
+          <p>If a field does not appear on the form because it is an office use only
+          field, the default value will still be submitted with the form, behind the
+          scenes.</p>
+
+          <p>If the field is also required, the default value will meet that
+          requirement.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Size:</p>
+        </td>
+
+        <td>
+          <p>The size in characters of the input field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Position:</p>
+        </td>
+
+        <td>
+          <p>This is the vertical position or order of this field relative to all the
+          other Custom Form Fields.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Spacing:</p>
+        </td>
+
+        <td>
+          <p>Select "Above" if you wish to create double-spacing above the field in the
+          Custom Form.&nbsp; Select "Below" if you wish to create double-spacing below
+          the field in the Custom Form.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Office Use Only:</p>
+        </td>
+
+        <td>
+          <p>Check this box to hide this field from the Submitter.&nbsp; Once the Custom
+          Form is submitted, Users that have access to the form's data will be able to
+          view and modify this field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Quiz Question:</td>
+
+        <td>
+          <p>Check this box to include this field's value in the passing percentage
+          calculation. (This field works in conjunction with the "Enable Quiz" and "Quiz
+          Pass Percentage" properties of the Custom Form, which prevents the submitter
+          from going to the "Next Page" without a passing percentage.)</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Correct Answer:</td>
+
+        <td>
+          <p>Enter the value to match against the value entered by the Custom Form's
+          submitter. This value is not case-sensitive. Leading and trailing spaces will
+          be ignored.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+</body>
+</html>

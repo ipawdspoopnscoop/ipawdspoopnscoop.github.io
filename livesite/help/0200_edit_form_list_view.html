@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+  <h1>Edit Form List View</h1>
+
+  <p>This screen allows you to layout the display of data from multiple submitted forms.
+  This is one of the most powerful features of the system.</p>
+
+  <p>You can update the way this Page's displays of data from multiple Submitted Forms,
+  and optionally link this Page to a Form Item View Page, that will display an individual
+  submitted form, by using the ^^form_item_view^^ system field.</p>
+
+  <h2>All available submitted form fields for display within View</h2>
+
+  <p>All the available fields that can be displayed are listed, sandwiched between the
+  double-caret (^^) which are used by the system to identify where to replace the fields
+  with data when displaying the Page. Simply copy any of the fields (be sure to include
+  the double-carets) into the Layout area.</p>
+
+  <h3>System Fields</h3>
+
+  <p>System Fields are fields that are available to include in your layout that are
+  automatically created for all Submitted Form data.</p>
+
+  <h3>Form Fields</h3>
+
+  <p>Form Fields are fields where created on the Custom Form that the Custom Form List
+  View Page is associated with (through it's Page Properties).</p>
+
+  <h3>Comment Fields</h3>
+
+  <p>There are several system fields which allow you to display information about
+  Comments that have be added to Submitted Forms. These fields can be used to setup a
+  forum that shows the number of replies and newest reply for various topics.</p>
+
+  <ul>
+    <li>^^number_of_comments^^: The total number of Comments that have been added to a
+    Submitted Form.</li>
+
+    <li>^^newest_comment_name^^: The name of the person who added the newest Comment. If
+    the name field was left blank, then "Anonymous" will be displayed.</li>
+
+    <li>^^newest_comment^^: A preview of the newest Comment (limited to 100
+    characters).</li>
+
+    <li>^^newest_comment_date_and_time^^: The date and time that the newest Comment was
+    added.</li>
+
+    <li>^^newest_comment_id^^: The ID for the newest Comment. This field can be used to
+    link directly to the newest Comment (see below).</li>
+
+    <li>^^newest_activity_date_and_time^^: If a Comment does not exist, then this is the
+    date and time that the Submitted Form was submitted. Otherwise, if a Comment does
+    exists, then this is the date and time that the newest Comment was added. If you are
+    creating a forum then you will want to set the Order by to this field (descending),
+    so that topics with the most recent activity will appear first in the list.</li>
+  </ul>
+
+  <p>Use the following URL format to link directly to the newest Comment on the Form Item
+  View Page:</p>
+
+  <p>^^form_item_view^^#software_comment_^^newest_comment_id^^</p>
+
+  <h3>Hints</h3>
+
+  <p>Hints provide a quick way of cutting and pasting common layout values into your
+  layout area.</p>
+
+  <h2>Display layout of submitted form data fields within View</h2>
+
+  <p>The Form List View Layout area, or "layout" is where you place your available fields
+  to be replaced by the actual data fields from the Submitted Forms. The layout area
+  represents a single submitted form's data. Think of this area as a row in a
+  spreadsheet, or table. It will be output over and over until all the Submitted Forms
+  are displayed.</p>
+
+  <h3>Linking to a Form Item View Page</h3>
+
+  <p>Most of the time, you will not only want to display the Submitted Form data in a
+  List, but also allow your site visitors to "drill into" the actual Submitted Form data
+  and view additional fields that are not added to the layout itself. To do this, create
+  a link in the layout and set the "Link URL" value to ^^form_item_view^^. The system
+  will then automatically create a URL with the Page name and reference code. If the link
+  does not work then make sure that a Form Item View Page is set in the page properties
+  for this Form List View.</p>
+
+  <h3>Displaying Conditional Information</h3>
+
+  <p>You can display information within the layout area based on a value being available
+  to display. For example, you may want to hide the label of the field if it is not
+  present the Submitted Form data. Use the following format to output different content
+  depending on whether there is a value or not:</p>
+
+  <p>[[There is a value: ^^<span style="font-style: italic;">example</span>^^ || There is
+  not a value]]</p>
+
+  <h3>Link to File Upload Field Data</h3>
+
+  <p>If you have created a Custom Form with File Upload fields on it, you will need to
+  dynamically link to them through the layout. To do this, use the following URL
+  format:</p>
+
+  <p>/files/^^<span style="font-style: italic;">example</span>^^ , where <span style=
+  "font-style: italic;">example</span> is a form field that contains the name of the File
+  uploaded.</p>
+
+  <h3>Displaying Date/Time Values</h3>
+
+  <p>You want to format your date and time values in different ways for spacing or
+  affect. The system allows you to use virtually any format you desire. To customize the
+  date and time values for the available time and date fields, use the following format
+  within your layout:</p>
+
+  <p>Format:<br />
+  ^^field_name^^%%<em>format</em>%%</p>
+
+  <p><em>format</em> can either be a <a href="http://php.net/manual/en/function.date.php"
+  target="_blank">PHP date format</a> or "relative" for a relative time (e.g. "2 minutes
+  ago", "2 minutes from now").</p>
+
+  <p>Examples:<br />
+  ^^submitted_date_and_time^^%%l, F j, Y \a\t g:i A%%<br />
+  ^^submitted_date_and_time^^%%relative%%</p>
+
+  <p>NOTE: For "relative" date/time formatting, once the date goes beyond one month, the
+  full date and/or time is displayed.</p>
+
+  <h2>Sort order of submitted form data within View</h2>
+
+  <p>You can sort the order in which the Submitted Form data (rows) are output.
+  "Ascending" orders results from a-z/0-9, while "descending" orders results from
+  z-a/9-0. Normally you will want to choose "alphabetical", however if the field you
+  select contains only numbers (e.g. price, square footage), then you will want to select
+  "numerical", so the results appear in the correct order. Numerical ordering works for
+  both integer numbers (e.g. 1, 2, 3) and decimal numbers (e.g. 0.75, 1.25, 10.333).</p>
+
+  <p>NOTE: "Random" sort order is only available for the first sort order option but is
+  useful if you want the rows of Submitted Form data to be displayed in a random order
+  each time the Page is displayed.</p>
+
+  <h2>Limit the amount of data within each View Page</h2>
+
+  <p>You can limit the nuber of Submitted Forms (data rows) are displayed on the page. If
+  you don't set the Maximum Number of Results Per Page, then the system will output
+  pagination navigation automatically.</p>
+
+  <h2>Define what submitted form data can be displayed by the View</h2>
+
+  <p>You can add filters that define exactly which Submitted Forms (data rows) are
+  displayed on the Page.</p>
+
+  <p>TIP: If you wish to further filter a Form List View to only allow a Submitter to
+  view their own Submitted Form data, add an E-Mail Address Field to your Custom Form and
+  then add a Filter where the "Submitter" "is equal to" the "Viewer". This will allow you
+  to place the Form List View Page into a Folder that many Users can view, but any
+  Submitted Form data from other Users will be hidden for them.</p>
+
+  <h2>Search &amp; Browse</h2>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Allow Visitor to search data</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Enable Search:</p>
+        </td>
+
+        <td>
+          <p>Check this to add a search box to the Form List View Page. Search will allow
+          the Visitor to enter a keyword and the system will search all (filtered) Form
+          List View data for the keyword and display the resulting Submitted Form data
+          (rows) that contain that keyword.</p>
+
+          <p>NOTE: The keyword search will search all system and custom form fields, not
+          just fields that appear in the display layout above.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">
+          <p>Enable Advanced Search:</p>
+        </td>
+
+        <td>
+          <p>Check this to allow the Visitor to search specific fields. A toggle button
+          (i.e. +/-) will appear that allows the Visitor to expand or collapse the
+          advanced search. The Visitor may use the keyword search and advanced search at
+          the same time. You may define the fields that are available in the layout
+          below.</p>
+
+          <p>The results will only be filtered for the advanced search fields that the
+          Visitor completes. If a Visitor leaves a field blank, then that field will be
+          ignored.</p>
+
+          <p>In general, fields will appear as they are defined in the Custom Form Field
+          properties. For example, if a field has a text box type, then it will appear as
+          a text box in the advanced search. There are some exceptions to this. For
+          example, a text area field will appear in the advanced search as a text box,
+          because the Visitor will not need a full text area to enter a search term.</p>
+
+          <p>If a default/blank option does not exist for pick lists and radio button
+          sets, a default/blank option will be added to the top of the lists. This allows
+          a Visitor to leave the default option selected in order to ignore a field if
+          he/she does not want to filter that field.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">
+          <p>Expand by Default:</p>
+        </td>
+
+        <td>
+          <p>Check this if you want the advanced search area to be expanded when the
+          Visitor first visits this Page, in order to draw attention to it. This prevents
+          the Visitor from having to click the toggle to expand the advanced search. If
+          you check this, the expand by default setting for the browse feature will be
+          disabled because both areas cannot be expanded at the same time.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Layout of fields in advanced search</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 4em;">
+          <p>Layout:</p>
+        </td>
+
+        <td>
+          <p>Use this rich-text editor in order to define the layout for the advanced
+          search fields. You will want to include a label for each field and then copy a
+          field from the lists above and paste into the layout. You can use a table in
+          order to align multiple fields. You will also want to include a submit button,
+          and optionally a clear button, which you can also copy from the lists
+          above.</p>
+
+          <p>You may add additional properties to any field. The available properties
+          appear below. "name" is the only required property.</p>
+
+          <table class="field">
+            <tbody>
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>class</p>
+                </td>
+
+                <td>
+                  <p>Use this to add a CSS class to a field.</p>
+
+                  <p>Example: {{name: 'example', class: 'example'}}</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>help</p>
+                </td>
+
+                <td>
+                  <p>Set this property to "false" to hide format instructions for date
+                  fields and etc. The available values are "true" and "false". Help is
+                  set to "true", by default. Do not wrap value in quotes.</p>
+
+                  <p>Example: {{name: 'example', help: false}}</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>label</p>
+                </td>
+
+                <td>
+                  <p>Use this to set the label for submit and clear buttons. By default,
+                  the submit button label is set to "Search" and the clear button label
+                  is set to "Clear".</p>
+
+                  <p>Example: {{name: 'submit_button', label: 'Submit'}}</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>name</p>
+                </td>
+
+                <td>
+                  <p>Use this to set the name for the field that you want the Visitor to
+                  be able to search. This is the only required property.</p>
+
+                  <p>Example: {{name: 'example'}}</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>operator</p>
+                </td>
+
+                <td>
+                  <p>Use this property to customize the filter for a field. The available
+                  operators appear below. "contains" is the default.</p>
+
+                  <ul>
+                    <li>contains</li>
+
+                    <li>does not contain</li>
+
+                    <li>is equal to</li>
+
+                    <li>is not equal to</li>
+
+                    <li>is less than</li>
+
+                    <li>is less than or equal to</li>
+
+                    <li>is greater than</li>
+
+                    <li>is greater than or equal to</li>
+                  </ul>
+
+                  <p>For example, if your Form List View is showing a list of apartments
+                  and you want Visitors to be able to enter a square footage range that
+                  they are interested in, you could enter the following in your
+                  layout.</p>
+
+                  <p>From {{name: 'square_footage', operator: 'is greater than or equal
+                  to'}} to {{name: 'square_footage', operator: 'is less than or equal
+                  to'}} sq. ft.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border: none;">
+                  <p>size</p>
+                </td>
+
+                <td style="border: none;">
+                  <p>Use this to set the size of a field. This property only applies to
+                  fields that appear as text boxes and pick lists. For text boxes, the
+                  size affects the width of the field. For pick lists, the size affects
+                  the height. If this property is not set, then it will use the size
+                  value from the Custom Form Field property. Do not wrap value in
+                  quotes.</p>
+
+                  <p>Example: {{name: 'example', size: 40}}</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Allow Visitor to browse data</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Enable Browse:</p>
+        </td>
+
+        <td>
+          <p>Check this to display a pick list that will allow Visitors to browse data by
+          Custom Form Fields. The pick list will contain a list of Custom Form Fields
+          that you may select below. Once the Visitor selects a Custom Form Field, a list
+          of available browse filters will appear in columns in a table. The browse
+          filters that appear are all of the unique values that exist in Submitted Forms
+          for that field. The Visitor can then click on a browse filter in order to
+          filter the Submitted Form results that appear on this Page.</p>
+
+          <p>The label for the fields in the pick list comes from the label for the
+          corresponding Custom Form Field. If a colon appears on the end of the label,
+          then it is removed.</p>
+
+          <p>The order of the fields in the pick list is defined by the order for the
+          fields in the Custom Form. You will have to reorder the fields in the Custom
+          Form to affect their order in the pick list.</p>
+
+          <p>A field will not appear in the pick list if there are no browse filters for
+          that field (i.e. no values appear in Submitted Forms for that field).</p>
+
+          <p>Only values for a field that exist in Submitted Forms will appear as browse
+          filters. For example, if there is an option in a pick list field that has not
+          been selected for any Submitted Forms, then it will not appear as a browse
+          filter.</p>
+
+          <p>Although you may enable both browse and search, the Visitor must choose
+          between browsing and searching at any given time. The Visitor may not combine
+          browsing with searching.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">
+          <p>Expand by Default:</p>
+        </td>
+
+        <td>
+          <p>Select a browse field that you want to be selected by default when a Visitor
+          first visits this Page, in order to draw attention to it. This will expand the
+          browse area by default. You may leave this pick list unselected if you do not
+          want the browse feature to be expanded by default. Please be aware that you
+          must also check the corresponding field in the "Select fields" area down below.
+          Also, a value must exist for the selected field in at least one Submitted Form
+          (i.e. the field cannot be left blank in all Submitted Forms if you want this
+          feature to work).</p>
+
+          <p>NOTE: If you select an option for this field, the expand by default setting
+          for the advanced search feature will be disabled because both areas cannot be
+          expanded at the same time.</p>
+
+          <p>TIP: You also can create a link to this page, using query string parameters,
+          in order to set a browse field and filter by default:</p>
+
+          <p><span style="font-family: monospace;">/pages/[page name]?[page
+          id]_browse_field_id=[field id]&amp;[page id]_browse_filter=[filter]</span></p>
+
+          <p>Replace <span style="font-family: monospace;">[page name]</span> with the
+          Page name. Replace <span style="font-family: monospace;">[page id]</span> with
+          the Page id. You can get the Page id, by editing the page properties and
+          looking in the address bar. Replace <span style=
+          "font-family: monospace;">[field id]</span> with the Custom Form Field id. You
+          can get the Custom Form Field id by editing the field in the Custom Form and
+          then looking in the address bar. Replace <span style=
+          "font-family: monospace;">[filter]</span> with the browse filter value.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left: 2em;">
+          <p>Select Fields:</p>
+        </td>
+
+        <td>
+          <p>Check the fields that you want to include in the browse pick list. Text area
+          fields with rich-text editor enabled and information fields will not appear in
+          the list, because they are not valid browse fields.</p>
+
+          <p>The columns field allows you to set the maximum number of columns that you
+          want the browse filters to appear in. If the browse filters tend to be long,
+          then you might want fewer columns, however if the browse filters are short,
+          then you might want more columns. Please be aware that the value you enter for
+          this field is the maximum number of columns, so fewer columns might appear in
+          some situations.</p>
+
+          <p>Select the order that you want the browse filters to appear in. "Ascending"
+          orders filters from a-z/0-9, while "descending" orders filters from z-a/9-0.
+          For date fields, "ascending" orders filters from oldest to most recent, while
+          "descending" orders filters from most recent to oldest.</p>
+
+          <p>Check the shortcut check box if you want the browse filters for that field
+          to link directly to the Submitted Form on the Form Item View Page instead of
+          refreshing this Form List View Page and showing the result. The shortcut will
+          only be used if there is only one result for the browse filter. You must set a
+          Form Item View on the Edit Page Properties screen for this Form List View Page
+          in order for the shortcut to work.</p>
+
+          <p>For "date" and "date &amp; time" fields, you may enter a format for the
+          date. This allows you to customize the way that the date is displayed. The
+          format must follow the syntax for the <a href=
+          "http://php.net/manual/en/function.date.php" target="_blank">PHP date
+          format</a>. See examples below.</p>
+
+          <p>Examples:<br />
+          "l, F j, Y \a\t g:i A" for "Friday, May 24, 2013 at 3:00 PM"<br />
+          "F Y" for "May 2013"</p>
+
+          <p>Most of the date characters that PHP supports are supported in this feature.
+          If you want a character to literally appear instead of being converted into a
+          date value, then place a "\" character before it (see example above for
+          "at").</p>
+
+          <p>Another benefit of the date format is that it allows you to group date
+          values together. For example, if you have a blog and you want a list of months
+          (with years) to appear in order to create a blog archive, you can simply enter
+          "F Y" and then you will get a list like the following: January 2013, February
+          2013, March 2013. Your blog form would need to have a "publish date" custom
+          field in order for this to work.</p>
+
+          <p>You may leave the format field empty if you just want the default format
+          (i.e. 05/24/2013 03:00 PM).</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Show all results before Visitor filters results by browsing or
+          searching</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Show Results by Default:</p>
+        </td>
+
+        <td>
+          <p>If you want Submitted Forms to appear in a list on this Page before the
+          Visitor browses or searches, then check this check box. If you leave this field
+          unchecked, then the Visitor will receive a message when they first visit the
+          Page that instructs the Visitor to first browse or search. Once the Visitor
+          browses or searches, then results will appear.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+</body>
+</html>

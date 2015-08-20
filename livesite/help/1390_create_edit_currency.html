@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Add / Edit Currency</h1>
+
+  <p>This screen displays a Currency and it's properties.</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>Name:</td>
+
+        <td>
+          Enter the name of this Currency that will be displayed on all Commerce Pages
+          and selectable to the Customer.
+
+          <p>For Example: "US Dollars".</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Base:</td>
+
+        <td>
+          <p>Check this box if this is the standard Currency that your business operates
+          around. There can only be one base Currency. The base Currency will be the
+          Currency that you use to enter amounts, in the control panel. It will also be
+          the default Currency that will appear to Customers on commerce Pages.</p>
+
+          <p>When an Order is completed, the amount that is sent to your payment
+          service/gateway will be in the base Currency, even if a Customer selected to
+          view prices in a different Currency. Also, the payment service/gateway will be
+          instructed by this system to complete the transaction in the base Currency.</p>
+
+          <p>You will need to check that your payment service/gateway supports your base
+          Currency. This system will send Currency info to most of the popular payment
+          services/gateways via their API's. In general this system will probably support
+          any base Currency that your payment service/gateway supports, however please
+          see exceptions below.</p>
+
+          <ul>
+            <li>Authorize.Net does not allow the Currency to be passed via their API for
+            recurring transactions, so you will need to check if they support your base
+            Currency at your account or processor level for recurring transactions.</li>
+
+            <li>For ClearCommerce / Payfuse, this system only supports the following base
+            Currencies: USD, AUD, CAD, EUR, and GBP.</li>
+
+            <li>First Data Global Gateway does not allow the Currency to be passed via
+            their API, so you will need to check if they support your base Currency at
+            your account or processor level.</li>
+
+            <li>Sage Payment Solutions does not allow the Currency to be passed via their
+            API, so you will need to check if they support your base Currency at your
+            account or processor level.</li>
+          </ul>
+
+          <p>Please be aware that this system assumes the base Currency has a format with
+          2 decimal places (e.g. $1.99). This system might not work for you if your base
+          Currency does not support decimal places or has more than 2 decimal places.</p>
+
+          <p>The system does not keep track of the base Currency that was in use when an
+          Order was completed. It assumes that all Orders were placed with the current
+          base Currency. In other words, once you change your base Currency, past Orders
+          will show the same old total value, but show the new base Currency symbol, so
+          the amount might appear to be incorrect. Because of this, you should not change
+          your base Currency often.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Code:</td>
+
+        <td>Enter this Currency code that will be stored and exported with the Order
+        data.<br />
+        <br />
+        For Example: "USD".<br />
+        <br />
+        It is important to enter the correct, internationally recognized, standard code
+        for the Currency, because this code may be sent to your payment
+        service/gateway.</td>
+      </tr>
+
+      <tr>
+        <td>Symbol:</td>
+
+        <td>Enter the symbol for this Currency.<br />
+        <br />
+        For example: "$".<br />
+        <br />
+        You may enter the HTML code for an HTML entity if necessary (e.g. "&amp;euro;").</td>
+      </tr>
+
+      <tr>
+        <td>Exchange Rate:</td>
+
+        <td>The current rate of exchange for this Currency, as compared to your base
+        Currency. Your base Currency should always have an exchange rate of "1".<br />
+        <br />
+        TIP: Use the "Update Exchange Rate" button on the "All Currencies" screen to
+        update this value instantly.<br />
+        <br />
+        IMPORTANT: Don't alter this value by hand unless you are sure that it is not
+        being updated automatically.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+</body>
+</html>

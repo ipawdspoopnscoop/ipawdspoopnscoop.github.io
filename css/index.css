@@ -139,10 +139,11 @@ form div.help-block {
     padding: 15px;
     z-index: 5;
 }
+.banner {
+    height: 300px;
+}
 .header {
-    margin-left: 0;
-    height: 500px;
-    width: 100%;
+    padding: 0;
 }
 a:hover {
     color: #bf0202;

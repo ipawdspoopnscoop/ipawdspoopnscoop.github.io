@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Import Contacts</h1>
+
+  <p>You can Import Contacts into your website database from your local computer any
+  Comma Separated Values (CSV) File. CSV file format is a universally accepted way to
+  move data between systems. Most spreadsheet programs and databases can save data as a
+  CSV text file so it is an ideal way to upload Contacts.</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Select Formatted Text File to Upload</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>CSV File:</td>
+
+        <td>Click on the [Browse] button to select a CSV text file from your local
+        computer that contains the Contacts that you wish to import.<br />
+        <br />
+        NOTE: You do not need to import all the available columns.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Import Options</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Import Mode:</td>
+
+        <td>Import all Contacts: This mode imports all Contacts found in the CSV file,
+        regardless of whether they already exist. If the Contact already exists
+        (determined by a matching e-mail address), the opt-in and out-out values are
+        copied (preserved) from the existing Contact to the new Contact.<br />
+        Only import Contacts with unique e-mail addresses: This mode imports ONLY the
+        Contacts from the CSV file that contain e-mail addresses not shared by any
+        existing Contact. This mode allows you to incrementally quot;overlay" new
+        Contacts into the system without affecting any existing Contacts.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Select Contact Groups to Import into</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Import into Contact Groups:</td>
+
+        <td>Select one or more Contact Groups that you would like the Contacts to be
+        added too.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+
+  <h2>Importing from Microsoft Outlook</h2>
+
+  <p>You can easily import your Address Book from MS Outlook and create mailing lists for
+  your important Contacts.</p>
+
+  <h2>Importing from a Member Database</h2>
+
+  <p>When importing Members, please include all Member IDs in the Member_id column.<br />
+  <br />
+  A Member ID should be a string of characters that your the Member will know, because
+  they will need to use them to register as Members after you have imported the
+  unregistered Members.<br />
+  <br />
+  Also, you may want to also include Expiration Dates in the expiration_date column.  Please be aware that the format of the expiration date should be yyyy-mm-dd.</p>
+
+  <p>After the Members have been imported, you should direct your unregistered Members to
+  any Page on your website that is placed in a Membership Access Folder. &nbsp;When they
+  reach this Page,&nbsp;the system will prompt them to register as a Member by displaying
+  the Membership Entrance Page. They will need to know their Member ID to go beyond this
+  Page. &nbsp;This step provide your members with secure login accounts for their
+  protection.</p>
+
+  <p>Once the&nbsp;Member has successfully registered,&nbsp;the system will redirect them
+  to the original Page in the Membership Access Folder you directed them too.</p>
+
+  <h2>Importing&nbsp;Affiliates</h2>
+
+  <p>You can import Affiliates and their Affiliate Codes, and Commission Rates using the
+  Contacts Import feature.</p>
+
+  <h2>Import from CSV file</h2>
+
+  <p>The easiest way is to get your data into columns in a spreadsheet. You may import
+  Contacts by uploading a CSV file. You can save a CSV file from Microsoft Excel. Here
+  are the guidelines for the CSV file:</p>
+
+  <ul>
+    <li>The first row of the CSV file must contain the names of the columns that you wish
+    to import data for.</li>
+
+    <li>You may use any number of columns from the list below.</li>
+
+    <li>Columns can be listed in any order.</li>
+
+    <li>Column names must be similar to those in the list below (i.e. "first_name" or
+    "First Name" or "FirstName" or "firstname" or etc.).</li>
+
+    <li>Exported column names from Outlook are supported.</li>
+
+    <li>The possible values for opt_in are "0" (Opt-Out) and "1" (Opt-In). "1" is the
+    default.</li>
+
+    <li>The possible values for affiliate_approved are "0" (not approved) and "1"
+    (approved). "0" is the default.</li>
+
+    <li>If you are saving a CSV file on a Mac, you might need to select the "Windows CSV"
+    format in Excel.</li>
+  </ul>
+
+  <p>Here is the list of the valid Contact Properties that you can import. Place one of
+  the following on the first row of each of your data columns:</p>
+
+  <ul>
+    <li>email_address</li>
+
+    <li>opt_out</li>
+
+    <li>salutation</li>
+
+    <li>first_name</li>
+
+    <li>last_name</li>
+
+    <li>suffix</li>
+
+    <li>nickname</li>
+
+    <li>company</li>
+
+    <li>title</li>
+
+    <li>department</li>
+
+    <li>office_location</li>
+
+    <li>business_address_1</li>
+
+    <li>business_address_2</li>
+
+    <li>business_city</li>
+
+    <li>business_state</li>
+
+    <li>business_country</li>
+
+    <li>business_zip_code</li>
+
+    <li>business_phone</li>
+
+    <li>business_fax</li>
+
+    <li>home_address_1</li>
+
+    <li>home_address_2</li>
+
+    <li>home_city</li>
+
+    <li>home_state</li>
+
+    <li>home_country</li>
+
+    <li>home_zip_code</li>
+
+    <li>home_phone</li>
+
+    <li>home_fax</li>
+
+    <li>mobile_phone</li>
+
+    <li>website</li>
+
+    <li>lead_source</li>
+
+    <li>description</li>
+
+    <li>member_id</li>
+
+    <li>expiration_date (Format: yyyy-mm-dd)</li>
+
+    <li>affiliate_approved</li>
+
+    <li>affiliate_name</li>
+
+    <li>affiliate_code</li>
+
+    <li>affiliate_commission_rate</li>
+  </ul>
+
+  <p>&nbsp;</p>
+</body>
+</html>

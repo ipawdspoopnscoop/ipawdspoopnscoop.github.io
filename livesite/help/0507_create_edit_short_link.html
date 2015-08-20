@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Create / Edit Short Link</h1>
+
+  <p>This screen displays a Short Link and its properties.</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>Name:</td>
+
+        <td>Enter the name for the Short Link (no spaces please). This will be the name
+        in the address that you give to people. This must be unique. The name is not
+        case-sensitive, so if the name is "example", then Visitors will be able to access
+        the Short Link at both "example" and "Example".</td>
+      </tr>
+
+      <tr>
+        <td>Destination Type:</td>
+
+        <td>Select the type of item that you want the Short Link to forward to.</td>
+      </tr>
+
+      <tr>
+        <td>Page/Catalog Page/Catalog Detail Page:</td>
+
+        <td>Select the Page that you want the Short Link to forward to. If the Short Link
+        is forwarding to a Page, then select any Page. If the Short Link is forwarding to
+        a Product Group, then you should either select a Catalog Page or a Catalog Detail
+        Page, based on where you want the Product Group to appear. If the Short Link is
+        forwarding to a Product, then select a Catalog Detail Page.</td>
+      </tr>
+
+      <tr>
+        <td>Product Group:</td>
+
+        <td>If you selected "Product Group" for the Destination Type, then select the
+        Product Group that you want the Short Link to forward to.</td>
+      </tr>
+
+      <tr>
+        <td>Product:</td>
+
+        <td>If you selected "Product" for the Destination Type, then select the Product
+        that you want the Short Link to forward to.</td>
+      </tr>
+
+      <tr>
+        <td>URL:</td>
+
+        <td>
+          <p>If you selected "URL" for the Destination Type, then enter the URL that you
+          want the Short Link to forward to. This allows you to forward a Visitor to any
+          URL at your website (e.g. pages/form_item_view?r=123, files/example.pdf, or
+          etc.) or to a URL at an external website (e.g.
+          http://www.example.com/example.html). This is useful if you want to create a
+          Short Link to a blog article or maybe a Short Link to a File.</p>
+
+          <p>If you want to forward to a URL at the same website, it is recommended that
+          you use a URL without the scheme, hostname, and path. For example, use
+          "pages/example" instead of "http://www.example.com/pages/example" and instead
+          of "/pages/example". This will allow your Short Links to continue to work if
+          your hostname or path changes. One exception is if your website runs on IIS on
+          Windows, then you might have to include the path (e.g. "/pages/example").</p>
+
+          <p>If you want the address in the Visitor's address bar to change to the
+          destination URL, you can use a full URL (http://www.example.com/pages/example).
+          This even works if you are simply linking to a URL at this same website,
+          instead of an external website. Alternatively, if you use a local URL (e.g.
+          pages/example) the address in the Visitor's address bar will not change. One
+          exception is if your website runs on IIS on Windows, then the address in the
+          Visitor's address bar will always change for the URL destination type.</p>
+
+          <p>Unlike Page, Product Group, and Product destination types, Short Links with
+          a URL destination type are not automatically managed by the system. This means
+          that if a Page name changes or etc., you will have to manually update the Short
+          Link.</p>
+
+          <p>If you want to include a tracking code in the destination URL, then you will
+          need to add it to the destination URL (e.g. pages/example?t=example). There is
+          not a separate field for the tracking code for this destination type.</p>
+
+          <p>For this destination type, query string paramenters are not carried over
+          from the Short Link URL to the destination URL. For example, if the Visitor
+          visits a Short Link at "/short_link?name=value", the Visitor will be forwarded
+          to the destination URL without the "?name=value" part. However, you can
+          manually include query string parameters in the destination URL if you
+          want.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Tracking Code:</td>
+
+        <td>
+          <p>For Page, Product Group, and Product destination types, you have the option
+          of adding a tracking code so that the system will remember that a Visitor came
+          from that Short Link. Tracking codes can then be viewed in various areas of the
+          system (e.g. Visitor/Order reports). This allows you to setup marketing
+          campaigns and do A/B testing. For example, you could setup two Short Links that
+          forward to the same Page, Product Group, or Product (e.g. example.com/campaign1
+          and example.com/campaign2) and then determine which campaign was more
+          effective.</p>
+
+          <p>If a tracking code appears in the address (e.g.
+          example.com/short_link?t=tracking_code), then it will override the value that
+          you enter in this field.</p>
+
+          <p>For the URL destination type, if you want to include a tracking code, then
+          you will need to include it manually in the destination URL (e.g.
+          pages/example?t=example).</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+</body>
+</html>
