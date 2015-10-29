@@ -148,8 +148,12 @@ form div.help-block {
 a:hover {
     color: #bf0202;
 }
+.staff {
+    padding: 20px;
+}
 .staff_img {
     border-radius: 50%;
+    border: solid;
 }
 .contact {
     padding-bottom: 100px;
