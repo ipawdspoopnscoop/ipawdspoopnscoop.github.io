@@ -111,6 +111,11 @@ form div.help-block {
 .logo {
     width: 150px;
 }
+.announcement-banner {
+    background-color: #000000;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
 .carousel-control .glyphicon-chevron-left {
     margin-left: -75px;
 }
